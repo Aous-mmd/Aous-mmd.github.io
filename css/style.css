@@ -31,6 +31,12 @@ nav .Logo {
           transition-delay: 0ms;
 }
 
+@media screen and (max-width: 925px) {
+  nav .Logo .Logo {
+    margin-right: 0;
+  }
+}
+
 nav li {
   padding: 10px 10px;
 }
