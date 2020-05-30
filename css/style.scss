@@ -16,6 +16,23 @@ nav {
     text-align: center !important;
     height: 80px !important;
     background-color: black;
+    .uk-button-default {
+      background-color: transparent;
+      color: white;
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 1rem;
+      &:hover, &:active, &:focus {
+        color: white;
+        border: 0;
+        border-bottom:2px solid white;
+      }
+    }
+    .uk-dropdown {
+      background: black;
+      color: white;
+      box-shadow: 0 5px 12px rgba(0,0,0,.15);
+  }
     .Logo {
       max-width: 85% ;
       height: auto ;
@@ -40,6 +57,16 @@ nav {
       &:hover {
         border-bottom: 2px solid white;
         cursor: pointer;
+      }
+    }
+    .dropdown-menu {
+      background-color: black;
+      a {
+        font-family: 'flat-jooza' !important;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        color:black;
       }
     }
 }
@@ -104,7 +131,6 @@ nav {
 .s1 {
   padding: 60px 10px;
   left:-110%;
-  opacity: 0;
   h2 {
     font-size: 45px;
     color:white;
@@ -166,7 +192,6 @@ nav {
 .s1r {
   padding: 60px 0px;
   right:-110%;
-  opacity: 0;
   .aboutC {
     p {
       font-family: 'flat-jooza' !important;
@@ -353,9 +378,10 @@ footer {
       margin: 20px 0 25px 0;
     }
     span {
+      margin-right: 15px;
       font-family: flat-jooza;
       color : #9a9a9a;
-      margin-top: 25px;
+      margin-top: 15px;
     }
   }
 }
@@ -364,7 +390,6 @@ footer {
   padding-bottom: 35px;
   padding-left: 80px;
   color: #9a9a9a;
-  a {font-size: 18px !important;}
 }
 button.back-to-top{
   margin: 0 !important;
@@ -511,6 +536,11 @@ input:checked {
     font-family:flat-jooza;
     color:white;
     z-index: 5;
+  }
+  @media screen and (max-width:960px) {
+    h1 {
+      display: none;
+    }
   }
   h2 {
     padding: 150px 150px;

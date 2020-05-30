@@ -18,6 +18,27 @@ nav {
   background-color: black;
 }
 
+nav .uk-button-default {
+  background-color: transparent;
+  color: white;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav .uk-button-default:hover, nav .uk-button-default:active, nav .uk-button-default:focus {
+  color: white;
+  border: 0;
+  border-bottom: 2px solid white;
+}
+
+nav .uk-dropdown {
+  background: black;
+  color: white;
+  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
 nav .Logo {
   max-width: 85%;
   height: auto;
@@ -49,6 +70,18 @@ nav li a:hover {
 nav li:hover {
   border-bottom: 2px solid white;
   cursor: pointer;
+}
+
+nav .dropdown-menu {
+  background-color: black;
+}
+
+nav .dropdown-menu a {
+  font-family: 'flat-jooza' !important;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (min-width: 925px) {
@@ -121,7 +154,6 @@ nav li:hover {
 .s1 {
   padding: 60px 10px;
   left: -110%;
-  opacity: 0;
 }
 
 .s1 h2 {
@@ -192,7 +224,6 @@ nav li:hover {
 .s1r {
   padding: 60px 0px;
   right: -110%;
-  opacity: 0;
 }
 
 .s1r .aboutC p {
@@ -408,9 +439,10 @@ footer .footerTop2 h2::after {
 }
 
 footer .footerTop2 span {
+  margin-right: 15px;
   font-family: flat-jooza;
   color: #9a9a9a;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .copyright {
@@ -418,10 +450,6 @@ footer .footerTop2 span {
   padding-bottom: 35px;
   padding-left: 80px;
   color: #9a9a9a;
-}
-
-.copyright a {
-  font-size: 18px !important;
 }
 
 button.back-to-top {
@@ -601,6 +629,12 @@ input:checked ~ .tab-content {
   font-family: flat-jooza;
   color: white;
   z-index: 5;
+}
+
+@media screen and (max-width: 960px) {
+  #Hairdressing h1 {
+    display: none;
+  }
 }
 
 #Hairdressing h2 {

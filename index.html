@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,32 +22,86 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">العربية</a>
-                                <a class="dropdown-item" href="#">France</a>
+                        <button class="uk-button uk-button-default" type="button">Hover</button>
+                        <div class="uk-width-large" uk-dropdown="pos: bottom">
+                            <div class="uk-dropdown-grid uk-child-width-1-3@m" uk-grid>
+                                <div>
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                        <li><a href="#">Item</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Language
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">العربية</a>
-                                <a class="dropdown-item" href="#">France</a>
+                            <!-- <div>
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li><a href="#">HAIRDRESSING SERVICES</a></li>
+                                    <li><a href="#">MAKE-UP SERVICES</a></li>
+                                    <li><a href="#">NAILS SERVICES</a></li>
+                                    <li><a href="#">BODY TREATMENT</a></li>
+                                    <li><a href="#">MESSAGE</a></li>
+                                    <li><a href="#">SIGNATURE MAMATI MESSAGE</a></li>
+                                </ul>
                             </div>
-                        </li>
+                            <div>
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li><a href="#">FACIAL</a></li>
+                                    <li><a href="#">Royal Pavilion</a></li>
+                                    <li><a href="#">the formula day spa</a></li>
+                                    <li><a href="#">PACKAGES</a></li>
+                                    <li><a href="#">SPECIAL BATH</a></li>
+                                    <li><a href="#">KIDS BEAUTY</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li><a href="#">EYE LASHES EXTENSION</a></li>
+                                    <li><a href="#">SALT CAVE</a></li>
+                                    <li><a href="#">HAIR EXTENTION</a></li>
+                                    <li><a href="#">NOSE PIERCING</a></li>
+                                    <li><a href="#">MASSAGE THERAPIST</a></li>
+                                    <li><a href="#">LPG SLIM FIRM AND FIT</a></li>
+                                    <li><a href="#">Henna services</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li><a href="#">Henna services</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                        <button class="uk-button uk-button-default" type="button">LANGUAGE</button>
+                        <div uk-dropdown>
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li><a href="#">العربية</a></li>
+                                <li><a href="#">FRANCIS</a></li>
+                            </ul>
+                        </div>
                     </ul>
                 </div>
             </nav>
@@ -114,7 +167,7 @@
                             <img id="1" src="images/Home/items/Hairdressing ServicesBK.jpg" />
                             <div class="text-left">
                                 <h2>HAIRDRESSING SERVICES</h2>
-                                <a href="#" class="btn btn-5">Read more</a>
+                                <a href="/hairdressing-services.html" class="btn btn-5">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -296,18 +349,19 @@
                     <div class="col-md-4 col-sm-12">
                         <div class="footerTop2">
                             <h2>Contact Info</h2>
-                            <span>My location</span><br>
-                            <span>My location</span><br>
-                            <span>My location</span><br>
+                            <span uk-icon="location"></span><span>Khalifa city A</span><br>
+                            <span uk-icon="world"></span><span>Abu Dhabi - U.A.E</span><br>
+                            <span uk-icon="mail"></span><span>info@mamati.com</span><br>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
-                        <div class="footerTop2">
-                            <h2>Contact Info</h2>
-                            <span>My location</span><br>
-                            <span>My location</span><br>
-                            <span>My location</span><br>
-                        </div>
+                        <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="http://facebook.com/mamati4u" class="uk-icon-button  uk-margin-small-right"
+                            uk-icon="facebook"></a>
+                        <a href="https://www.instagram.com/mamatibeauty/" class="uk-icon-button  uk-margin-small-right"
+                            uk-icon="instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCwFxm0YRqCNU7Z_AsbEj9Hw"
+                            class="uk-icon-button  uk-margin-small-right" uk-icon="youtube"></a>
                     </div>
                 </div>
             </div>
@@ -322,6 +376,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
