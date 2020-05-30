@@ -62,9 +62,6 @@ nav li:hover {
   .fixed-top {
     top: -12px;
   }
-  .openTime {
-    display: none;
-  }
   .Logo {
     margin-left: 10px !important;
   }
@@ -90,7 +87,7 @@ nav li:hover {
   left: 1100px;
   top: 340px;
   z-index: 11;
-  visibility: visible;
+  display: none;
 }
 
 .openTime .openTimeText {
@@ -98,7 +95,6 @@ nav li:hover {
   font-family: Cinzel;
   -webkit-transform: matrix3d(0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
           transform: matrix3d(0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  visibility: visible;
   text-align: left;
   letter-spacing: 5px;
   font-weight: 400;
@@ -108,6 +104,12 @@ nav li:hover {
   opacity: 1;
   -webkit-transform-origin: 50% 50% 0px;
           transform-origin: 50% 50% 0px;
+}
+
+@media screen and (min-width: 960px) {
+  .openTime {
+    display: block;
+  }
 }
 
 .arrows {
