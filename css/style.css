@@ -30,12 +30,6 @@ nav .Logo {
           transition-delay: 0ms;
 }
 
-@media screen and (max-width: 925px) {
-  nav .Logo .Logo {
-    margin-right: 0;
-  }
-}
-
 nav li {
   padding: 10px 10px;
 }
@@ -67,6 +61,9 @@ nav li:hover {
 @media screen and (max-width: 925px) {
   .fixed-top {
     top: -12px;
+  }
+  .Logo {
+    margin-left: 10px !important;
   }
   nav {
     height: 90px !important;
@@ -184,18 +181,30 @@ nav li:hover {
   color: #ffffff;
 }
 
-#items .col-lg-3, #items .col-md-6, #items .col-sm-12 {
-  padding-left: 2px !important;
-  padding-right: 2px !important;
+#items {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-#items .col-lg-3 .HomeServices, #items .col-md-6 .HomeServices, #items .col-sm-12 .HomeServices {
+#items .col-lg-3.col-md-6.col-sm-12 {
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+#items .HomeServices {
+  height: 504px;
   position: relative;
   padding-top: 2px !important;
   padding-bottom: 2px !important;
 }
 
-#items .col-lg-3 .HomeServices h2, #items .col-md-6 .HomeServices h2, #items .col-sm-12 .HomeServices h2 {
+#items .HomeServices img {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+}
+
+#items .HomeServices h2 {
   position: absolute;
   font-family: flat-jooza;
   color: white;
@@ -207,7 +216,7 @@ nav li:hover {
           transform: translate(-50%, -50%);
 }
 
-#items .col-lg-3 .HomeServices .btn-5, #items .col-md-6 .HomeServices .btn-5, #items .col-sm-12 .HomeServices .btn-5 {
+#items .HomeServices .btn-5 {
   position: absolute;
   bottom: 50px;
   left: 45px;

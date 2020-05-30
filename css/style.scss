@@ -24,11 +24,6 @@ nav {
       margin-left: 15% ;
       transition: opacity 400ms ;
       transition-delay: 0ms ;
-      @media screen and (max-width:925px){
-        .Logo {
-          margin-right: 0;
-        }
-      }
     }
     li {
       padding: 10px 10px;
@@ -57,6 +52,9 @@ nav {
 @media screen and (max-width:925px) {
   .fixed-top {
     top:-12px;
+  }
+  .Logo {
+    margin-left: 10px !important;
   }
   nav {
     height: 90px !important;
@@ -161,13 +159,22 @@ nav {
   }
 }
 #items {
-  .col-lg-3, .col-md-6, .col-sm-12 {
-    padding-left: 2px !important;
-    padding-right: 2px !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    .col-lg-3.col-md-6.col-sm-12 {
+      padding-right: 2px;
+      padding-left: 2px;
+    }
     .HomeServices {
+      height: 504px;
       position: relative;
       padding-top: 2px !important;
       padding-bottom: 2px !important;
+      img {
+        position: absolute;
+        height: 500px;
+        width: 100%;
+      }
       h2 {
         position: absolute;
         font-family: flat-jooza;
@@ -184,7 +191,6 @@ nav {
         left: 45px;
       }
     }
-  }
 }
 footer {
   margin-top: 50px;
