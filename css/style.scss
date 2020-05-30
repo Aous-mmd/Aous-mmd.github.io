@@ -17,12 +17,11 @@ nav {
     height: 80px !important;
     background-color: black;
     .Logo {
-      float: left ;
       max-width: 85% ;
       height: auto ;
       width: 100px ;
-      margin-right: 25% ;
-      margin-left: 5px ;
+      margin-left: 15% ;
+      margin-right: 15%;
       transition: opacity 400ms ;
       transition-delay: 0ms ;
     }
@@ -169,14 +168,15 @@ nav {
         font-family: flat-jooza;
         color:white;
         font-size: 40px;
-        top: 50%;
-        left: 50%;
+        font-weight: bold;
+        top: 55%;
+        left: 43%;
         transform: translate(-50%, -50%);
       }
       .btn-5 {
         position: absolute;
-        bottom: 8px;
-        left: 16px;
+        bottom: 50px;
+        left: 45px;
       }
     }
   }

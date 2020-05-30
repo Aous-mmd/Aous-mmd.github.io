@@ -5,7 +5,20 @@ function mouseaway(my_image) {
 function rollover(my_image) {
     my_image.src = "/images/Home/items/Hairdressing Services.jpg";
 }
+function mouseaway1(my_image) {
+  my_image.src = "/images/Home/items/Make-up ServicesBK.jpg";
+}
 
+function rollover1(my_image) {
+  my_image.src = "/images/Home/items/Make-up Services.jpg";
+}
+function mouseaway2(my_image) {
+  my_image.src = "/images/Home/items/NAILS SERVICESBK.jpg";
+}
+
+function rollover2(my_image) {
+  my_image.src = "/images/Home/items/NAILS SERVICES.jpg";
+}
 $("#accordion").accordion({
   heightStyle: "content",
   active:false,
