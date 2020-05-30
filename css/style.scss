@@ -103,6 +103,8 @@ nav {
 }
 .s1 {
   padding: 60px 10px;
+  left:-110%;
+  opacity: 0;
   h2 {
     font-size: 45px;
     color:white;
@@ -147,8 +149,24 @@ nav {
     text-shadow: 1px 1px 2px grey; 
   }
 }
+@media screen and (max-width:925px) {
+  .s1r {
+    right:0;
+    opacity: 1;
+  }
+  .s1 {
+    left:0;
+    opacity: 1;
+  }
+  .copyright {
+    font-size:10px;
+    text-align: center;
+  }
+}
 .s1r {
   padding: 60px 0px;
+  right:-110%;
+  opacity: 0;
   .aboutC {
     p {
       font-family: 'flat-jooza' !important;
@@ -168,16 +186,19 @@ nav {
     .col-lg-3.col-md-6.col-sm-12 {
       padding-right: 2px;
       padding-left: 2px;
+      margin-bottom: 5px;
     }
     .HomeServices {
       height: 504px;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
       position: relative;
       padding-top: 2px !important;
       padding-bottom: 2px !important;
       img {
         position: absolute;
-        height: 500px;
-        width: 100%;
+        height: 504px;
       }
       h2 {
         position: absolute;
@@ -194,6 +215,101 @@ nav {
         bottom: 50px;
         left: 45px;
       }
+    }
+    #img1 {
+      background-image: url('/images/Home/items/Hairdressing\ Services.jpg');
+      left:-110%;
+      opacity:0;
+    }
+    #img2 {
+      background-image: url('/images/Home/items/Make-up\ Services.jpg');
+      left:-110%;
+      opacity:0;
+    }
+    #img3 {
+      background-image: url('/images/Home/items/NAILS\ SERVICES.jpg');
+      left:-110%;
+      opacity:0;
+    }
+    #img4 {
+      background-image: url('/images/Home/items/BODY\ TREATMENT.jpg');
+      left:-110%;
+      opacity:0;
+    }
+    #img5 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/MASSAGE.jpg');
+    }
+    #img6 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/SIGNATURE\ MAMATI\ MASSAGE.jpg');
+    }
+    #img7 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/FACIAL.jpg');
+    }
+    #img8 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/Royal\ Pavilion.jpg');
+    }
+    #img9 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/the\ formula\ day\ spa.jpg');
+    }
+    #img10 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/PACKAGES.jpg');
+    }
+    #img11 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/SPECIAL\ BATH.jpg');
+    }
+    #img12 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/KIDS\ BEAUTY.jpg');
+    }
+    #img13 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/EYE\ LASHES\ EXTENSION.jpg');
+    }
+    #img14 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/SALT\ CAVE.jpg');
+    }
+    #img15 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/HAIR\ EXTENTION.jpg');
+    }
+    #img16 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/NOSE\ PIERCING.jpg');
+    }
+    #img17 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/MASSAGE\ THERAPIST.jpg');
+    }
+    #img18 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/LPG\ SLIM\ FIRM\ AND\ FIT.jpg');
+    }
+    #img19 {
+      left:-110%;
+      opacity:0;
+      background-image: url('/images/Home/items/Henna\ services.jpeg');
     }
 }
 @media screen and (min-width:960px) {
