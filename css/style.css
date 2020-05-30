@@ -227,6 +227,13 @@ nav li:hover {
   left: 45px;
 }
 
+@media screen and (min-width: 960px) {
+  .HomeServices h2 {
+    font-size: 25px;
+    top: 65%;
+  }
+}
+
 footer {
   margin-top: 50px;
   padding: 70px 20px;
