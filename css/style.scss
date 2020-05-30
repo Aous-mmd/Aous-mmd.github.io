@@ -17,12 +17,11 @@ nav {
     height: 80px !important;
     background-color: black;
     .Logo {
-      float: left ;
       max-width: 85% ;
       height: auto ;
       width: 100px ;
-      margin-right: 25% ;
-      margin-left: 5px ;
+      margin-right: 15% ;
+      margin-left: 15% ;
       transition: opacity 400ms ;
       transition-delay: 0ms ;
       @media screen and (max-width:925px){

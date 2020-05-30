@@ -19,12 +19,11 @@ nav {
 }
 
 nav .Logo {
-  float: left;
   max-width: 85%;
   height: auto;
   width: 100px;
-  margin-right: 25%;
-  margin-left: 5px;
+  margin-right: 15%;
+  margin-left: 15%;
   -webkit-transition: opacity 400ms;
   transition: opacity 400ms;
   -webkit-transition-delay: 0ms;
