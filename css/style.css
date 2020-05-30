@@ -19,11 +19,12 @@ nav {
 }
 
 nav .Logo {
+  float: left;
   max-width: 85%;
   height: auto;
   width: 100px;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-right: 25%;
+  margin-left: 5px;
   -webkit-transition: opacity 400ms;
   transition: opacity 400ms;
   -webkit-transition-delay: 0ms;
@@ -184,16 +185,9 @@ nav li:hover {
 }
 
 #items .col-lg-3 .HomeServices, #items .col-md-6 .HomeServices, #items .col-sm-12 .HomeServices {
-  height: 445px;
-  width: 336px;
   position: relative;
   padding-top: 2px !important;
   padding-bottom: 2px !important;
-}
-
-#items .col-lg-3 .HomeServices img, #items .col-md-6 .HomeServices img, #items .col-sm-12 .HomeServices img {
-  height: 100%;
-  width: 336px;
 }
 
 #items .col-lg-3 .HomeServices h2, #items .col-md-6 .HomeServices h2, #items .col-sm-12 .HomeServices h2 {
@@ -266,6 +260,66 @@ footer .footerTop2 span {
 
 .copyright a {
   font-size: 18px !important;
+}
+
+button.back-to-top {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #fff;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  color: transparent;
+  clear: both;
+  visibility: hidden;
+  position: fixed;
+  cursor: pointer;
+  display: block;
+  border: none;
+  right: 50px;
+  bottom: 75px;
+  font-size: 0px;
+  outline: 0 !important;
+  z-index: 99;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+button.back-to-top:hover,
+button.back-to-top:active,
+button.back-to-top:focus {
+  outline: 0 !important;
+}
+
+button.back-to-top::before {
+  content: "\f077";
+  font-family: "FontAwesome";
+  display: block;
+  margin: -5px 0 auto;
+}
+
+button.back-to-top.show {
+  display: block;
+  color: black;
+  background: white;
+  font-size: 25px;
+  right: 25px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  visibility: visible;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+button.back-to-top.show:active {
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
 input {
