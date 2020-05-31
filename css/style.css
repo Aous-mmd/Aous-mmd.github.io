@@ -151,52 +151,6 @@ nav .dropdown-menu a {
   width: 50px;
 }
 
-/**/
-.btna-div *:before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-[class^="btn-"] {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 80px;
-  max-width: 250px;
-  margin: 1rem auto;
-  text-transform: uppercase;
-  border: 1px solid currentColor;
-}
-
-.btn-0 {
-  color: #c77196;
-}
-
-.btn-0:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url(../images/hover/gradient-hover.jpg);
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-}
-
-.btn-0:hover {
-  color: #efd5e0;
-}
-
-.btn-0:hover:before {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
-
-/**/
 .s1 {
   padding: 60px 10px;
   left: -110%;
@@ -223,7 +177,7 @@ nav .dropdown-menu a {
   border-radius: 50px;
 }
 
-.btn-5 {
+.btn-6 {
   margin: 10px 0;
   color: white;
   font-size: 1.2em !important;
@@ -243,7 +197,7 @@ nav .dropdown-menu a {
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.btn-5:hover {
+.btn-6:hover {
   border: 1px solid;
   -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
           box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
@@ -322,123 +276,166 @@ nav .dropdown-menu a {
           transform: translate(-50%, -50%);
 }
 
-#items .HomeServices .btn-5 {
+#items .HomeServices [class^="btn-"] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  max-width: 150px;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: 2px solid currentColor;
+}
+
+#items .HomeServices .btna-div {
+  margin-top: 115%;
+}
+
+#items .HomeServices .btna-div *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#items .HomeServices .btna-div .btn-5 {
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 10px;
+  z-index: 554;
+}
+
+#items .HomeServices .btna-div .btn-5:before {
+  content: '';
   position: absolute;
-  bottom: 50px;
-  left: 45px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/hover/gradient-hover.jpg);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+#items .HomeServices .btna-div .btn-5:hover {
+  color: #813b1a;
+}
+
+#items .HomeServices .btna-div .btn-5:hover .readMore {
+  color: white;
+}
+
+#items .HomeServices .btna-div .btn-5 .readMore {
+  text-decoration: none;
+  z-index: 555;
+  position: inherit;
+  font-weight: bold;
+}
+
+#items .HomeServices .btna-div .btn-5 .arrow-right {
+  height: 5px;
+  width: 5px;
+}
+
+#items .HomeServices .btn-5:hover:before {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 
 #items #img1 {
   background-image: url("/images/Home/items/Hairdressing Services.jpg");
-  left: -110%;
-  opacity: 0;
+  width: 10%;
 }
 
 #items #img2 {
   background-image: url("/images/Home/items/Make-up Services.jpg");
-  left: -110%;
-  opacity: 0;
+  width: 10%;
 }
 
 #items #img3 {
   background-image: url("/images/Home/items/NAILS SERVICES.jpg");
-  left: -110%;
-  opacity: 0;
+  width: 0%;
 }
 
 #items #img4 {
   background-image: url("/images/Home/items/BODY TREATMENT.jpg");
-  left: -110%;
-  opacity: 0;
+  width: 0%;
 }
 
 #items #img5 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/MASSAGE.jpg");
 }
 
 #items #img6 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/SIGNATURE MAMATI MASSAGE.jpg");
 }
 
 #items #img7 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/FACIAL.jpg");
 }
 
 #items #img8 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/Royal Pavilion.jpg");
 }
 
 #items #img9 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/the formula day spa.jpg");
 }
 
 #items #img10 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/PACKAGES.jpg");
 }
 
 #items #img11 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/SPECIAL BATH.jpg");
 }
 
 #items #img12 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/KIDS BEAUTY.jpg");
 }
 
 #items #img13 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/EYE LASHES EXTENSION.jpg");
 }
 
 #items #img14 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/SALT CAVE.jpg");
 }
 
 #items #img15 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/HAIR EXTENTION.jpg");
 }
 
 #items #img16 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/NOSE PIERCING.jpg");
 }
 
 #items #img17 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/MASSAGE THERAPIST.jpg");
 }
 
 #items #img18 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/LPG SLIM FIRM AND FIT.jpg");
 }
 
 #items #img19 {
-  left: -110%;
-  opacity: 0;
+  width: 0%;
   background-image: url("/images/Home/items/Henna services.jpeg");
 }
 
@@ -498,66 +495,6 @@ footer .footerTop2 span {
   padding-bottom: 35px;
   padding-left: 80px;
   color: #9a9a9a;
-}
-
-button.back-to-top {
-  margin: 0 !important;
-  padding: 0 !important;
-  background: #fff;
-  height: 0px;
-  width: 0px;
-  overflow: hidden;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  color: transparent;
-  clear: both;
-  visibility: hidden;
-  position: fixed;
-  cursor: pointer;
-  display: block;
-  border: none;
-  right: 50px;
-  bottom: 75px;
-  font-size: 0px;
-  outline: 0 !important;
-  z-index: 99;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-button.back-to-top:hover,
-button.back-to-top:active,
-button.back-to-top:focus {
-  outline: 0 !important;
-}
-
-button.back-to-top::before {
-  content: "\f077";
-  font-family: "FontAwesome";
-  display: block;
-  margin: -5px 0 auto;
-}
-
-button.back-to-top.show {
-  display: block;
-  color: black;
-  background: white;
-  font-size: 25px;
-  right: 25px;
-  bottom: 50px;
-  height: 50px;
-  width: 50px;
-  visibility: visible;
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-}
-
-button.back-to-top.show:active {
-  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
 input {

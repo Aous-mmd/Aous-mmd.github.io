@@ -130,81 +130,6 @@ nav {
   padding: 20px 20px;
   width: 50px;
 }
-
-// [class^="btn-"] {
-//   position: relative;
-//   display: block;
-//   overflow: hidden;
-//   width: 100%;
-//   height: 80px;
-//   max-width: 250px;
-//   margin: 1rem auto;
-//   text-transform: uppercase;
-//   border: 1px solid currentColor;
-// }
-//   .btn-0 {
-//     color: #7db6cc;
-//     &:hover {
-//       color: #d9eaf0;
-//       &:
-//     }
-//   }
-//   .btn-0:hover:before {
-//     -webkit-transform: translateX(0);
-//     transform: translateX(0);
-//   }
-//   .icon-arrow-right {
-//     background: url(../images/hover/forward-arrow-white.svg);  
-//   }
-//   .icon-arrow-right:before {
-//     background: url(../images/hover/forward-arrow.svg);
-//   }
-
-/**/
-.btna-div *:before{
-  box-sizing: border-box;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-[class^="btn-"] {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 80px;
-  max-width: 250px;
-  margin: 1rem auto;
-  text-transform: uppercase;
-  border: 1px solid currentColor;
-}
-
-.btn-0 {
-  color: #c77196;
-}
-.btn-0:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url(../images/hover/gradient-hover.jpg);
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-.btn-0:hover {
-  color: #efd5e0;
-}
-.btn-0:hover:before {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-/**/
-
-
-
-
 .s1 {
   padding: 60px 10px;
   left: -110%;
@@ -228,7 +153,7 @@ nav {
   display: block;
   border-radius: 50px;
 }
-.btn-5 {
+.btn-6 {
   margin: 10px 0;
   color: white;
   font-size: 1.2em !important;
@@ -313,108 +238,142 @@ nav {
       left: 43%;
       transform: translate(-50%, -50%);
     }
-    .btn-5 {
-      position: absolute;
-      bottom: 50px;
-      left: 45px;
+    [class^="btn-"] {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      height: 60px;
+      max-width: 150px;
+      margin: 1rem auto;
+      text-transform: uppercase;
+      border: 2px solid currentColor;
+    }
+    .btna-div {
+      margin-top: 115%;
+      *:before{
+        box-sizing: border-box;
+        -webkit-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+      }
+      .btn-5 {
+        color: white;
+        text-align: center;
+        padding-top: 15px;
+        padding-left: 10px;
+        z-index:554;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: url(../images/hover/gradient-hover.jpg);
+          -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+        }
+        &:hover {
+          color: #813b1a;
+          .readMore {
+            color: white;
+          }
+        }
+        .readMore {
+          text-decoration: none;
+          z-index:555;
+          position: inherit;
+          font-weight: bold;
+        }
+        .arrow-right {
+          height: 5px;
+          width: 5px;
+        }
+      }
+    }
+    .btn-5:hover:before {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
   }
   #img1 {
     background-image: url("/images/Home/items/Hairdressing\ Services.jpg");
-    left: -110%;
-    opacity: 0;
+    width:10%;
   }
   #img2 {
     background-image: url("/images/Home/items/Make-up\ Services.jpg");
-    left: -110%;
-    opacity: 0;
+    width:10%;
   }
   #img3 {
     background-image: url("/images/Home/items/NAILS\ SERVICES.jpg");
-    left: -110%;
-    opacity: 0;
+    width:0%;
   }
   #img4 {
     background-image: url("/images/Home/items/BODY\ TREATMENT.jpg");
-    left: -110%;
-    opacity: 0;
+    width:0%;
   }
   #img5 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/MASSAGE.jpg");
   }
   #img6 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/SIGNATURE\ MAMATI\ MASSAGE.jpg");
   }
   #img7 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/FACIAL.jpg");
   }
   #img8 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/Royal\ Pavilion.jpg");
   }
   #img9 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/the\ formula\ day\ spa.jpg");
   }
   #img10 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/PACKAGES.jpg");
   }
   #img11 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/SPECIAL\ BATH.jpg");
   }
   #img12 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/KIDS\ BEAUTY.jpg");
   }
   #img13 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/EYE\ LASHES\ EXTENSION.jpg");
   }
   #img14 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/SALT\ CAVE.jpg");
   }
   #img15 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/HAIR\ EXTENTION.jpg");
   }
   #img16 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/NOSE\ PIERCING.jpg");
   }
   #img17 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/MASSAGE\ THERAPIST.jpg");
   }
   #img18 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/LPG\ SLIM\ FIRM\ AND\ FIT.jpg");
   }
   #img19 {
-    left: -110%;
-    opacity: 0;
+    width:0%;
     background-image: url("/images/Home/items/Henna\ services.jpeg");
   }
 }
+
 @media screen and (min-width: 960px) {
   .HomeServices {
     h2 {
@@ -423,6 +382,7 @@ nav {
     }
   }
 }
+
 footer {
   margin-top: 50px;
   padding: 70px 20px;
@@ -469,60 +429,7 @@ footer {
   padding-left: 80px;
   color: #9a9a9a;
 }
-button.back-to-top {
-  margin: 0 !important;
-  padding: 0 !important;
-  background: #fff;
-  height: 0px;
-  width: 0px;
-  overflow: hidden;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  color: transparent;
-  clear: both;
-  visibility: hidden;
-  position: fixed;
-  cursor: pointer;
-  display: block;
-  border: none;
-  right: 50px;
-  bottom: 75px;
-  font-size: 0px;
-  outline: 0 !important;
-  z-index: 99;
-  transition: all 0.3s ease-in-out;
-}
-button.back-to-top:hover,
-button.back-to-top:active,
-button.back-to-top:focus {
-  outline: 0 !important;
-}
-button.back-to-top::before {
-  content: "\f077";
-  font-family: "FontAwesome";
-  display: block;
-  margin: -5px 0 auto;
-}
-button.back-to-top.show {
-  display: block;
-  color: black;
-  background: white;
-  font-size: 25px;
-  right: 25px;
-  bottom: 50px;
-  height: 50px;
-  width: 50px;
-  visibility: visible;
-  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
-}
-button.back-to-top.show:active {
-  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
-}
+
 input {
   position: absolute;
   opacity: 0;
