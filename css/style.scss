@@ -5,87 +5,89 @@
 $bg-00: #000000;
 
 body {
-    background: $bg-00;
-    color:white;
-    font-family: flat-jooza;
-    overflow-x: hidden;
+  background: $bg-00;
+  color: white;
+  font-family: flat-jooza;
+  overflow-x: hidden;
 }
 nav {
-    z-index: 1;
-    padding: 0 200px !important;
-    text-align: center !important;
-    height: 80px !important;
-    background-color: black;
-    .uk-button-default {
-      background-color: transparent;
+  z-index: 1;
+  padding: 0 200px !important;
+  text-align: center !important;
+  height: 80px !important;
+  background-color: black;
+  .uk-button-default {
+    background-color: transparent;
+    color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1rem;
+    &:hover,
+    &:active,
+    &:focus {
       color: white;
-      border: 1px solid black;
-      font-weight: bold;
-      font-size: 1rem;
-      &:hover, &:active, &:focus {
-        color: white;
-        border: 0;
-        border-bottom:2px solid white;
-      }
+      border: 0;
+      border-bottom: 2px solid white;
     }
-    .uk-dropdown {
-      background: black;
-      color: white;
-      box-shadow: 0 5px 12px rgba(0,0,0,.15);
   }
-    .Logo {
-      max-width: 85% ;
-      height: auto ;
-      width: 100px ;
-      margin-right: 15% ;
-      margin-left: 15% ;
-      transition: opacity 400ms ;
-      transition-delay: 0ms ;
-    }
-    li {
-      padding: 10px 10px;
-      a {
-        font-family: 'flat-jooza' !important;
-        font-size: 18px;
-        font-weight: 600;
-        text-decoration: none;
-        color:white;
-        &:hover {
-          color: white;
-        }
-      }
+  .uk-dropdown {
+    background: black;
+    color: white;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  }
+  .Logo {
+    max-width: 85%;
+    height: auto;
+    width: 100px;
+    margin-right: 15%;
+    margin-left: 15%;
+    transition: opacity 400ms;
+    transition-delay: 0ms;
+  }
+  li {
+    padding: 10px 10px;
+    a {
+      font-family: "flat-jooza" !important;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
       &:hover {
-        border-bottom: 2px solid white;
-        cursor: pointer;
+        color: white;
       }
     }
-    .dropdown-menu {
-      background-color: black;
-      a {
-        font-family: 'flat-jooza' !important;
-        font-size: 18px;
-        font-weight: 600;
-        text-decoration: none;
-        color:black;
-      }
+    &:hover {
+      border-bottom: 2px solid white;
+      cursor: pointer;
     }
+  }
+  .dropdown-menu {
+    background-color: black;
+    a {
+      font-family: "flat-jooza" !important;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
-@media screen and (min-width:925px) {
+@media screen and (min-width: 925px) {
   nav {
     height: 90px !important;
-    padding:0px 20px !important;
+    padding: 0px 20px !important;
   }
 }
-@media screen and (max-width:925px) {
+@media screen and (max-width: 925px) {
   .fixed-top {
-    top:-12px;
+    top: -12px;
   }
   .Logo {
     margin-left: 10px !important;
   }
   nav {
     height: 90px !important;
-    padding:0px 20px !important;
+    padding: 0px 20px !important;
   }
   .uk-position-bottom-left {
     display: none;
@@ -118,9 +120,9 @@ nav {
     transform-origin: 50% 50% 0px;
   }
 }
-@media screen and (min-width:960px) {
+@media screen and (min-width: 960px) {
   .openTime {
-    display:block;
+    display: block;
   }
 }
 .arrows {
@@ -128,13 +130,88 @@ nav {
   padding: 20px 20px;
   width: 50px;
 }
+
+// [class^="btn-"] {
+//   position: relative;
+//   display: block;
+//   overflow: hidden;
+//   width: 100%;
+//   height: 80px;
+//   max-width: 250px;
+//   margin: 1rem auto;
+//   text-transform: uppercase;
+//   border: 1px solid currentColor;
+// }
+//   .btn-0 {
+//     color: #7db6cc;
+//     &:hover {
+//       color: #d9eaf0;
+//       &:
+//     }
+//   }
+//   .btn-0:hover:before {
+//     -webkit-transform: translateX(0);
+//     transform: translateX(0);
+//   }
+//   .icon-arrow-right {
+//     background: url(../images/hover/forward-arrow-white.svg);  
+//   }
+//   .icon-arrow-right:before {
+//     background: url(../images/hover/forward-arrow.svg);
+//   }
+
+/**/
+.btna-div *:before{
+  box-sizing: border-box;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+[class^="btn-"] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  max-width: 250px;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.btn-0 {
+  color: #c77196;
+}
+.btn-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/hover/gradient-hover.jpg);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.btn-0:hover {
+  color: #efd5e0;
+}
+.btn-0:hover:before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/**/
+
+
+
+
 .s1 {
   padding: 60px 10px;
-  left:-110%;
+  left: -110%;
   h2 {
     font-size: 45px;
-    color:white;
-    font-family: 'flat-jooza' !important;
+    color: white;
+    font-family: "flat-jooza" !important;
     font-weight: 600;
     line-height: 65px;
     text-align: left;
@@ -153,7 +230,7 @@ nav {
 }
 .btn-5 {
   margin: 10px 0;
-  color:white;
+  color: white;
   font-size: 1.2em !important;
   font-weight: bold;
   border: 2px solid white;
@@ -163,38 +240,38 @@ nav {
   text-transform: uppercase;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
-  outline-color: rgba(255, 255, 255, .5);
+  outline-color: rgba(255, 255, 255, 0.5);
   outline-offset: 0px;
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
   &:hover {
     border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
-    text-shadow: 1px 1px 2px grey; 
+    text-shadow: 1px 1px 2px grey;
   }
 }
-@media screen and (max-width:925px) {
+@media screen and (max-width: 925px) {
   .s1r {
-    right:0;
+    right: 0;
     opacity: 1;
   }
   .s1 {
-    left:0;
+    left: 0;
     opacity: 1;
   }
   .copyright {
-    font-size:10px;
+    font-size: 10px;
     text-align: center;
   }
 }
 .s1r {
   padding: 60px 0px;
-  right:-110%;
+  right: -110%;
   .aboutC {
     p {
-      font-family: 'flat-jooza' !important;
+      font-family: "flat-jooza" !important;
       font-size: 14px !important;
       font-weight: 400;
       line-height: 28px;
@@ -202,146 +279,147 @@ nav {
       text-align: left;
       color: #ffffff;
     }
-    
   }
 }
 #items {
-    padding-left: 5px;
-    padding-right: 5px;
-    .col-lg-3.col-md-6.col-sm-12 {
-      padding-right: 2px;
-      padding-left: 2px;
-      margin-bottom: 5px;
-    }
-    .HomeServices {
+  padding-left: 5px;
+  padding-right: 5px;
+  .col-lg-3.col-md-6.col-sm-12 {
+    padding-right: 2px;
+    padding-left: 2px;
+    margin-bottom: 5px;
+  }
+  .HomeServices {
+    height: 504px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    img {
+      position: absolute;
       height: 504px;
-      background-position: center !important;
-      background-repeat: no-repeat !important;
-      background-size: cover !important;
-      position: relative;
-      padding-top: 2px !important;
-      padding-bottom: 2px !important;
-      img {
-        position: absolute;
-        height: 504px;
-      }
-      h2 {
-        position: absolute;
-        font-family: flat-jooza;
-        color:white;
-        font-size: 40px;
-        font-weight: bold;
-        top: 55%;
-        left: 43%;
-        transform: translate(-50%, -50%);
-      }
-      .btn-5 {
-        position: absolute;
-        bottom: 50px;
-        left: 45px;
-      }
+      position: inherit;
+      width: 100%;
     }
-    #img1 {
-      background-image: url('/images/Home/items/Hairdressing\ Services.jpg');
-      left:-110%;
-      opacity:0;
+    h2 {
+      position: absolute;
+      font-family: flat-jooza;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      top: 55%;
+      left: 43%;
+      transform: translate(-50%, -50%);
     }
-    #img2 {
-      background-image: url('/images/Home/items/Make-up\ Services.jpg');
-      left:-110%;
-      opacity:0;
+    .btn-5 {
+      position: absolute;
+      bottom: 50px;
+      left: 45px;
     }
-    #img3 {
-      background-image: url('/images/Home/items/NAILS\ SERVICES.jpg');
-      left:-110%;
-      opacity:0;
-    }
-    #img4 {
-      background-image: url('/images/Home/items/BODY\ TREATMENT.jpg');
-      left:-110%;
-      opacity:0;
-    }
-    #img5 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/MASSAGE.jpg');
-    }
-    #img6 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/SIGNATURE\ MAMATI\ MASSAGE.jpg');
-    }
-    #img7 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/FACIAL.jpg');
-    }
-    #img8 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/Royal\ Pavilion.jpg');
-    }
-    #img9 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/the\ formula\ day\ spa.jpg');
-    }
-    #img10 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/PACKAGES.jpg');
-    }
-    #img11 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/SPECIAL\ BATH.jpg');
-    }
-    #img12 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/KIDS\ BEAUTY.jpg');
-    }
-    #img13 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/EYE\ LASHES\ EXTENSION.jpg');
-    }
-    #img14 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/SALT\ CAVE.jpg');
-    }
-    #img15 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/HAIR\ EXTENTION.jpg');
-    }
-    #img16 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/NOSE\ PIERCING.jpg');
-    }
-    #img17 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/MASSAGE\ THERAPIST.jpg');
-    }
-    #img18 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/LPG\ SLIM\ FIRM\ AND\ FIT.jpg');
-    }
-    #img19 {
-      left:-110%;
-      opacity:0;
-      background-image: url('/images/Home/items/Henna\ services.jpeg');
-    }
+  }
+  #img1 {
+    background-image: url("/images/Home/items/Hairdressing\ Services.jpg");
+    left: -110%;
+    opacity: 0;
+  }
+  #img2 {
+    background-image: url("/images/Home/items/Make-up\ Services.jpg");
+    left: -110%;
+    opacity: 0;
+  }
+  #img3 {
+    background-image: url("/images/Home/items/NAILS\ SERVICES.jpg");
+    left: -110%;
+    opacity: 0;
+  }
+  #img4 {
+    background-image: url("/images/Home/items/BODY\ TREATMENT.jpg");
+    left: -110%;
+    opacity: 0;
+  }
+  #img5 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/MASSAGE.jpg");
+  }
+  #img6 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/SIGNATURE\ MAMATI\ MASSAGE.jpg");
+  }
+  #img7 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/FACIAL.jpg");
+  }
+  #img8 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/Royal\ Pavilion.jpg");
+  }
+  #img9 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/the\ formula\ day\ spa.jpg");
+  }
+  #img10 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/PACKAGES.jpg");
+  }
+  #img11 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/SPECIAL\ BATH.jpg");
+  }
+  #img12 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/KIDS\ BEAUTY.jpg");
+  }
+  #img13 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/EYE\ LASHES\ EXTENSION.jpg");
+  }
+  #img14 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/SALT\ CAVE.jpg");
+  }
+  #img15 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/HAIR\ EXTENTION.jpg");
+  }
+  #img16 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/NOSE\ PIERCING.jpg");
+  }
+  #img17 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/MASSAGE\ THERAPIST.jpg");
+  }
+  #img18 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/LPG\ SLIM\ FIRM\ AND\ FIT.jpg");
+  }
+  #img19 {
+    left: -110%;
+    opacity: 0;
+    background-image: url("/images/Home/items/Henna\ services.jpeg");
+  }
 }
-@media screen and (min-width:960px) {
+@media screen and (min-width: 960px) {
   .HomeServices {
     h2 {
-      font-size:25px;
-      top:65%;
+      font-size: 25px;
+      top: 65%;
     }
   }
 }
@@ -356,13 +434,13 @@ footer {
       letter-spacing: 0.2px;
       font-size: 15px;
       font-family: flat-jooza;
-      color : #9a9a9a;
+      color: #9a9a9a;
       text-decoration: none;
     }
   }
   .footerTop2 {
     h2 {
-      color:white;
+      color: white;
       font-size: 18px;
       text-transform: uppercase;
       font-family: flat-jooza;
@@ -380,7 +458,7 @@ footer {
     span {
       margin-right: 15px;
       font-family: flat-jooza;
-      color : #9a9a9a;
+      color: #9a9a9a;
       margin-top: 15px;
     }
   }
@@ -391,33 +469,33 @@ footer {
   padding-left: 80px;
   color: #9a9a9a;
 }
-button.back-to-top{
+button.back-to-top {
   margin: 0 !important;
   padding: 0 !important;
   background: #fff;
-	height: 0px;
+  height: 0px;
   width: 0px;
   overflow: hidden;
-	border-radius: 50px;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
   color: transparent;
-	clear: both;
+  clear: both;
   visibility: hidden;
   position: fixed;
   cursor: pointer;
   display: block;
   border: none;
   right: 50px;
-	bottom: 75px;
+  bottom: 75px;
   font-size: 0px;
   outline: 0 !important;
   z-index: 99;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 button.back-to-top:hover,
 button.back-to-top:active,
-button.back-to-top:focus{
+button.back-to-top:focus {
   outline: 0 !important;
 }
 button.back-to-top::before {
@@ -428,15 +506,15 @@ button.back-to-top::before {
 }
 button.back-to-top.show {
   display: block;
-  color:black;
-    background: white;
+  color: black;
+  background: white;
   font-size: 25px;
   right: 25px;
-	bottom: 50px;
+  bottom: 50px;
   height: 50px;
   width: 50px;
   visibility: visible;
-	box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
 }
@@ -453,7 +531,7 @@ input {
 .tabs {
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
 .tab {
   margin: 0 auto;
@@ -481,7 +559,7 @@ input {
       width: 1em;
       height: 1em;
       text-align: center;
-      transition: all .35s;
+      transition: all 0.35s;
     }
   }
   &-content {
@@ -489,7 +567,7 @@ input {
     border: 1px solid white;
     max-height: 0;
     padding: 0 1em;
-    transition: all .35s;
+    transition: all 0.35s;
   }
   &-close {
     display: flex;
@@ -533,11 +611,11 @@ input:checked {
     transform: translate(-50%, -50%);
     font-size: 50px;
     font-weight: 900;
-    font-family:flat-jooza;
-    color:white;
+    font-family: flat-jooza;
+    color: white;
     z-index: 5;
   }
-  @media screen and (max-width:960px) {
+  @media screen and (max-width: 960px) {
     h1 {
       display: none;
     }
@@ -547,7 +625,7 @@ input:checked {
     color: rgba(255, 255, 255, 0.7215686274509804);
     font-size: 50px;
     font-weight: 900;
-    font-family:flat-jooza;
+    font-family: flat-jooza;
   }
 }
 .Accord {
@@ -567,7 +645,7 @@ input:checked {
       }
       .card-header {
         border-bottom: 1px solid grey;
-        transition: all .4s ease-in-out;
+        transition: all 0.4s ease-in-out;
         background-color: white;
         .mb-0 {
           color: black;
@@ -576,7 +654,6 @@ input:checked {
           font-weight: bold;
         }
       }
-      
-    } 
+    }
   }
 }

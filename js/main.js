@@ -105,5 +105,12 @@ $(document).ready(function () {
             });
         }
     });
+    // $('.btn-0').hover(function() {
+    //     // $(this).animate({
+    //     //     background: 'url(../images/hover/gradient-hover.jpg)',
+    //     // });
+    //     $( this ).fadeOut( 100 );
+    //     $( this ).fadeIn( 500 );
+    // });
 });
 

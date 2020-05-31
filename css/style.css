@@ -56,7 +56,7 @@ nav li {
 }
 
 nav li a {
-  font-family: 'flat-jooza' !important;
+  font-family: "flat-jooza" !important;
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
@@ -77,7 +77,7 @@ nav .dropdown-menu {
 }
 
 nav .dropdown-menu a {
-  font-family: 'flat-jooza' !important;
+  font-family: "flat-jooza" !important;
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
@@ -151,6 +151,52 @@ nav .dropdown-menu a {
   width: 50px;
 }
 
+/**/
+.btna-div *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+[class^="btn-"] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  max-width: 250px;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.btn-0 {
+  color: #c77196;
+}
+
+.btn-0:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../images/hover/gradient-hover.jpg);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.btn-0:hover {
+  color: #efd5e0;
+}
+
+.btn-0:hover:before {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/**/
 .s1 {
   padding: 60px 10px;
   left: -110%;
@@ -159,7 +205,7 @@ nav .dropdown-menu a {
 .s1 h2 {
   font-size: 45px;
   color: white;
-  font-family: 'flat-jooza' !important;
+  font-family: "flat-jooza" !important;
   font-weight: 600;
   line-height: 65px;
   text-align: left;
@@ -227,7 +273,7 @@ nav .dropdown-menu a {
 }
 
 .s1r .aboutC p {
-  font-family: 'flat-jooza' !important;
+  font-family: "flat-jooza" !important;
   font-size: 14px !important;
   font-weight: 400;
   line-height: 28px;
@@ -260,6 +306,8 @@ nav .dropdown-menu a {
 #items .HomeServices img {
   position: absolute;
   height: 504px;
+  position: inherit;
+  width: 100%;
 }
 
 #items .HomeServices h2 {
@@ -474,8 +522,8 @@ button.back-to-top {
   font-size: 0px;
   outline: 0 !important;
   z-index: 99;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 button.back-to-top:hover,
@@ -560,8 +608,8 @@ input {
   width: 1em;
   height: 1em;
   text-align: center;
-  -webkit-transition: all .35s;
-  transition: all .35s;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 .tab-content {
@@ -569,8 +617,8 @@ input {
   border: 1px solid white;
   max-height: 0;
   padding: 0 1em;
-  -webkit-transition: all .35s;
-  transition: all .35s;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 .tab-close {
@@ -670,8 +718,8 @@ input:checked ~ .tab-content {
 
 .Accord #accordion .card .card-header {
   border-bottom: 1px solid grey;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   background-color: white;
 }
 

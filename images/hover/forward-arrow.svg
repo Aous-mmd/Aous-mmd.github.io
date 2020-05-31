@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 12" style="enable-background:new 0 0 16 12;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+</style>
+<title>arrow black</title>
+<desc>Created with Sketch.</desc>
+<g id="Symbols">
+	<g id="CTA---read-more-on-white" transform="translate(-108.000000, -16.000000)">
+		<g id="cta">
+			<g id="arrow-black" transform="translate(108.000000, 17.000000)">
+				<g id="arrow-golden">
+					<g id="Group">
+						<g id="arrow-new">
+							<g>
+								<g id="Path-3">
+									
+										<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-231.0749" y1="383.7635" x2="-230.5569" y2="383.7635" gradientTransform="matrix(4.9931 0 0 -9.9696 1164.006 3830.9568)">
+										<stop  offset="0" style="stop-color:#FAAB85"/>
+										<stop  offset="1" style="stop-color:#B76034"/>
+									</linearGradient>
+									<polygon class="st0" points="10.4,10.3 9.6,9.6 14.3,5 9.7,0.4 10.4,-0.4 15.7,5 									"/>
+								</g>
+								<g id="Path-2">
+									
+										<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-269.7333" y1="10.8901" x2="-268.7333" y2="10.8901" gradientTransform="matrix(15 0 0 -1 4046 15.89)">
+										<stop  offset="0" style="stop-color:#FAAB85"/>
+										<stop  offset="1" style="stop-color:#B76034"/>
+									</linearGradient>
+									<rect y="4.5" class="st1" width="15" height="1"/>
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
