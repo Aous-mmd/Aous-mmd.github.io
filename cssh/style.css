@@ -1,3 +1,131 @@
+#loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  background-color: black;
+  z-index: 99;
+  text-align: center;
+}
+
+#loading #loading-image {
+  position: absolute;
+  top: 50px;
+  left: 450px;
+  height: 70%;
+  z-index: 100;
+}
+
+@-webkit-keyframes ani_1 {
+  0% {
+    height: 20px;
+    width: 20px;
+    background-color: #310276;
+    margin-top: 10px;
+  }
+  50% {
+    height: 10px;
+    width: 10px;
+    background-color: #f10691;
+    margin-top: 20px;
+  }
+  100% {
+    height: 20px;
+    width: 20px;
+    background-color: #310276;
+    margin-top: 10px;
+  }
+}
+
+@keyframes ani_1 {
+  0% {
+    height: 20px;
+    width: 20px;
+    background-color: #310276;
+    margin-top: 10px;
+  }
+  50% {
+    height: 10px;
+    width: 10px;
+    background-color: #f10691;
+    margin-top: 20px;
+  }
+  100% {
+    height: 20px;
+    width: 20px;
+    background-color: #310276;
+    margin-top: 10px;
+  }
+}
+
+@-webkit-keyframes ani_2 {
+  0% {
+    border-bottom: solid 2px #310276;
+  }
+  50% {
+    border-bottom: solid 2px #f10691;
+  }
+  100% {
+    border-bottom: solid 2px #310276;
+  }
+}
+
+@keyframes ani_2 {
+  0% {
+    border-bottom: solid 2px #310276;
+  }
+  50% {
+    border-bottom: solid 2px #f10691;
+  }
+  100% {
+    border-bottom: solid 2px #310276;
+  }
+}
+
+#loading .cycles {
+  display: inline-block;
+  width: 220px;
+  position: absolute;
+  top: calc(70% - 20px);
+  left: calc(50% - 110px);
+}
+
+#loading .cycles .cycle {
+  height: 20px;
+  width: 20px;
+  background-color: #f10691;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+#loading .cycles #cycle1 {
+  -webkit-animation: ani_1 2s 0s linear infinite;
+          animation: ani_1 2s 0s linear infinite;
+}
+
+#loading .cycles #cycle2 {
+  -webkit-animation: ani_1 2s 0.3s linear infinite;
+          animation: ani_1 2s 0.3s linear infinite;
+}
+
+#loading .cycles #cycle3 {
+  -webkit-animation: ani_1 2s 0.6s linear infinite;
+          animation: ani_1 2s 0.6s linear infinite;
+}
+
+#loading .cycles #cycle4 {
+  -webkit-animation: ani_1 2s 0.9s linear infinite;
+          animation: ani_1 2s 0.9s linear infinite;
+}
+
+#loading .cycles #cycle5 {
+  -webkit-animation: ani_1 2s 1.2s linear infinite;
+          animation: ani_1 2s 1.2s linear infinite;
+}
+
 header .uk-navbar-container:not(.uk-navbar-transparent) {
   background: black;
 }
@@ -394,8 +522,8 @@ header .uk-navbar-right:hover {
   color: #f10691;
   background: transparent;
   cursor: pointer;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .contact form #input-submit:hover {

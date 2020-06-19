@@ -6,6 +6,97 @@ $overlay: #00000087;
 $bg: #a3a3a378;
 $sec-text: #424242;
 
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    background-color: $black;
+    z-index: 99;
+    text-align: center;
+
+    #loading-image {
+        position: absolute;
+        top: 50px;
+        left: 450px;
+        height: 70%;
+        z-index: 100;
+    }
+    @keyframes ani_1 {
+        0% {
+            height: 20px;
+            width: 20px;
+            background-color: $purple;
+            margin-top: 10px;
+        }
+
+        50% {
+            height: 10px;
+            width: 10px;
+            background-color: $pink;
+            margin-top: 20px;
+        }
+
+        100% {
+            height: 20px;
+            width: 20px;
+            background-color: $purple;
+            margin-top: 10px;
+        }
+    }
+
+    @keyframes ani_2 {
+        0% {
+            border-bottom: solid 2px $purple;
+        }
+
+        50% {
+            border-bottom: solid 2px $pink;
+        }
+
+        100% {
+            border-bottom: solid 2px $purple;
+        }
+    }
+
+    .cycles {
+        display: inline-block;
+        width: 220px;
+        position: absolute;
+        top: calc(70% - 20px);
+        left: calc(50% - 110px);
+        .cycle {
+            height: 20px;
+            width: 20px;
+            background-color: $pink;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 50%;
+        }
+
+        #cycle1 {
+            animation: ani_1 2s 0s linear infinite;
+        }
+
+        #cycle2 {
+            animation: ani_1 2s 0.3s linear infinite;
+        }
+
+        #cycle3 {
+            animation: ani_1 2s 0.6s linear infinite;
+        }
+
+        #cycle4 {
+            animation: ani_1 2s 0.9s linear infinite;
+        }
+
+        #cycle5 {
+            animation: ani_1 2s 1.2s linear infinite;
+        }
+    }
+}
 header {
     .uk-navbar-container:not(.uk-navbar-transparent) {
         background: $black;
@@ -240,7 +331,7 @@ header {
 .contact {
     display: block;
     margin-top: 331px;
-    padding:50px 0;
+    padding: 50px 0;
     height: 80vh;
     background-color: $bg;
     h1 {
@@ -282,7 +373,7 @@ header {
         color: $pink;
         background: transparent;
         cursor: pointer;
-        transition: all .4s ease-in-out;
+        transition: all 0.4s ease-in-out;
         &:hover {
             background: $purple;
         }
