@@ -1,0 +1,238 @@
+$black: black;
+$white: white;
+$pink: #f10691;
+$purple: #310276;
+$overlay: #00000087;
+$bg: #a3a3a378;
+$sec-text: #424242;
+
+header {
+    .uk-navbar-container:not(.uk-navbar-transparent) {
+        background: $black;
+    }
+    .uk-navbar-left {
+        z-index: 1;
+        margin-left: 110px;
+    }
+    .uk-navbar-right {
+        z-index: 1;
+        margin-right: 50px;
+        font-weight: bold;
+        .uk-active {
+            a {
+                color: $pink;
+                border-bottom: 3px solid $purple;
+            }
+        }
+        .uk-navbar-dropdown {
+            background: $black;
+        }
+        a {
+            color: $pink;
+            &:hover {
+                color: $purple;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.uk-overlay-primary {
+    background: $overlay;
+    z-index: 0;
+}
+.header-section {
+    margin-top: -80px;
+    background: url(../images/main-bg.jpg);
+    width: 100%;
+    height: 120vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .uk-overlay-primary {
+        height: 120vh;
+    }
+    .header-text {
+        padding-top: 25vh;
+        position: absolute;
+        h1 {
+            color: $white;
+            font-weight: bolder;
+            font-size: 60px;
+            line-height: 1.1;
+        }
+        h5 {
+            color: $pink;
+            font-weight: bold;
+            text-shadow: 1px 2px $purple;
+        }
+        .loop-alternate-infinity {
+            z-index: 2;
+            color: $purple;
+            margin-top: 100px;
+        }
+        span {
+            margin-top: 150px;
+        }
+    }
+}
+.services {
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+        .row {
+            margin-right: 0;
+            margin-left: 0;
+            .col-lg-3,
+            .col-md-3,
+            .col-sm-1 {
+                padding-right: 0;
+                padding-left: 0;
+                .men {
+                    background: url(../images/men.jpg);
+                }
+                .women {
+                    background: url(../images/women.jpg);
+                }
+                .men,
+                .women {
+                    padding: 20px 20px;
+                    height: 555px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    .men-desc {
+                        position: absolute;
+                        margin: 35px;
+                        width: 80%;
+                        text-align: center;
+                        border: 1px solid $purple;
+                        padding-top: 200px;
+                        padding-bottom: 200px;
+                        .men-title {
+                            color: $white !important;
+                            font-weight: bold;
+                        }
+                        .btn-5 {
+                            text-decoration: none;
+                            transition: all 0.3s ease-in-out;
+                            color: $pink;
+                            padding: 10px 40px;
+                            background-color: #00000087;
+                            border-radius: 5px;
+                            &:hover {
+                                background-color: $pink;
+                                color: $purple;
+                            }
+                        }
+                    }
+                }
+                .mix {
+                    height: 555px;
+                    background-color: $bg;
+                    .container-xl {
+                        padding-right: 50px;
+                        padding-left: 50px;
+                        .service-title {
+                            color: $purple;
+                            margin-top: -35px;
+                            font-weight: bold;
+                            border-bottom: 1px solid $pink;
+                        }
+                        .text-justify {
+                            line-height: 1.9;
+                            color: $sec-text;
+                        }
+                        .btn-service {
+                            background-color: transparent;
+                            border: 1px solid $purple;
+                            color: $purple;
+                            border-radius: 5px;
+                            transition: all 0.5s ease-in-out;
+                            padding: 10px 30px;
+                            &:hover {
+                                background-color: $purple;
+                                border: $pink;
+                                color: $pink;
+                                border: 1px solid $pink;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.icons,
+.gallery {
+    height: 100vh;
+    background-color: $bg;
+    padding-top: 50px;
+    h5 {
+        color: $purple;
+        font-weight: bold;
+    }
+    h1 {
+        margin-top: 0;
+        font-weight: bolder;
+        color: $black;
+    }
+    small {
+        color: $sec-text;
+    }
+}
+.gallery {
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+        .row {
+            margin-right: 0;
+            margin-left: 0;
+            .col-lg-3,
+            .col-md-3,
+            .col-sm-1 {
+                padding-right: 0;
+                padding-left: 0;
+                .p1 {
+                    background: url(../images/p1.jpg);
+                }
+                .p2 {
+                    background: url(../images/p2.jpg);
+                }
+                .p3 {
+                    background: url(../images/p3.jpg);
+                }
+                .p4 {
+                    background: url(../images/p4.jpg);
+                }
+                .p5 {
+                    background: url(../images/p5.jpg);
+                }
+                .p6 {
+                    background: url(../images/p6.jpg);
+                }
+                .p7 {
+                    background: url(../images/p7.jpg);
+                }
+                .p8 {
+                    background: url(../images/p1.jpg);
+                }
+                .p1,
+                .p2,
+                .p3,
+                .p4,
+                .p5,
+                .p6,
+                .p7,
+                .p8 {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
