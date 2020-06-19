@@ -88,7 +88,7 @@
   display: inline-block;
   width: 220px;
   position: absolute;
-  top: calc(70% - 20px);
+  top: calc(82% - 20px);
   left: calc(50% - 110px);
 }
 
@@ -245,7 +245,7 @@ header .uk-navbar-right:hover {
 .services .container-fluid .row .col-sm-1 .men,
 .services .container-fluid .row .col-sm-1 .women {
   padding: 20px 20px;
-  height: 555px;
+  height: 560px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -304,8 +304,17 @@ header .uk-navbar-right:hover {
 .services .container-fluid .row .col-lg-3 .mix,
 .services .container-fluid .row .col-md-3 .mix,
 .services .container-fluid .row .col-sm-1 .mix {
-  height: 555px;
+  height: 560px;
   background-color: #a3a3a378;
+}
+
+.services .container-fluid .row .col-lg-3 .mix img,
+.services .container-fluid .row .col-md-3 .mix img,
+.services .container-fluid .row .col-sm-1 .mix img {
+  margin-bottom: 60px;
+  padding-top: 20px;
+  width: 150px;
+  height: 150px;
 }
 
 .services .container-fluid .row .col-lg-3 .mix .container-xl,
@@ -376,6 +385,22 @@ header .uk-navbar-right:hover {
 .icons small,
 .gallery small {
   color: #424242;
+}
+
+.icons .icon-ser,
+.gallery .icon-ser {
+  padding-top: 30px;
+}
+
+.icons .icon-ser img,
+.gallery .icon-ser img {
+  padding: 10px 10px;
+  height: 85px;
+}
+
+.icons .icon-ser strong,
+.gallery .icon-ser strong {
+  color: #310276;
 }
 
 .gallery .container-fluid {

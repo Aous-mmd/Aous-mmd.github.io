@@ -65,7 +65,7 @@ $sec-text: #424242;
         display: inline-block;
         width: 220px;
         position: absolute;
-        top: calc(70% - 20px);
+        top: calc(82% - 20px);
         left: calc(50% - 110px);
         .cycle {
             height: 20px;
@@ -189,7 +189,7 @@ header {
                 .men,
                 .women {
                     padding: 20px 20px;
-                    height: 555px;
+                    height: 560px;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -220,8 +220,14 @@ header {
                     }
                 }
                 .mix {
-                    height: 555px;
+                    height: 560px;
                     background-color: $bg;
+                    img {
+                        margin-bottom: 60px;
+                        padding-top: 20px;
+                        width: 150px;
+                        height: 150px;
+                    }
                     .container-xl {
                         padding-right: 50px;
                         padding-left: 50px;
@@ -272,6 +278,16 @@ header {
     }
     small {
         color: $sec-text;
+    }
+    .icon-ser {
+        padding-top: 30px;
+        img {
+            padding: 10px 10px;
+            height: 85px;
+        }
+        strong {
+            color: $purple;
+        }
     }
 }
 .gallery {
