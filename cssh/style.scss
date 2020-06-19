@@ -46,12 +46,12 @@ header {
     margin-top: -80px;
     background: url(../imagesh/main-bg.jpg);
     width: 100%;
-    height: 120vh;
+    height: 119.5vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     .uk-overlay-primary {
-        height: 120vh;
+        height: inherit;
     }
     .header-text {
         padding-top: 25vh;
@@ -166,6 +166,7 @@ header {
 }
 .icons,
 .gallery {
+    border-top: 1px solid rgba(31, 31, 31, 0.308);
     height: 100vh;
     background-color: $bg;
     padding-top: 50px;
@@ -232,6 +233,143 @@ header {
                     width: 100%;
                     height: 400px;
                 }
+            }
+        }
+    }
+}
+.contact {
+    display: block;
+    margin-top: 331px;
+    padding:50px 0;
+    height: 80vh;
+    background-color: $bg;
+    h1 {
+        text-align: center;
+        color: $purple;
+        text-shadow: 1px 1px 0 $pink;
+    }
+    form {
+        max-width: 600px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    form input,
+    form textarea {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        padding: 1em;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        border: 1px solid $purple;
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        font-family: "Merriweather", sans-serif;
+        -moz-box-shadow: 0 1px 1px $pink;
+        -webkit-box-shadow: 0 1px 1px $pink;
+        box-shadow: 0 1px 1px $pink;
+        resize: none;
+    }
+    form input:focus,
+    form textarea:focus {
+        -moz-box-shadow: 0 0px 2px $purple !important;
+        -webkit-box-shadow: 0 0px 2px $purple !important;
+        box-shadow: 0 0px 2px $purple !important;
+    }
+    form #input-submit {
+        color: $pink;
+        background: transparent;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+        &:hover {
+            background: $purple;
+        }
+    }
+    form textarea {
+        height: 126px;
+    }
+
+    .half {
+        float: left;
+        width: 48%;
+        margin-bottom: 1em;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    .left {
+        margin-right: 2%;
+    }
+
+    @media (max-width: 480px) {
+        .half {
+            width: 100%;
+            float: none;
+            margin-bottom: 0;
+        }
+    }
+    /* Clearfix */
+    .cf:before,
+    .cf:after {
+        content: " ";
+        /* 1 */
+        display: table;
+        /* 2 */
+    }
+
+    .cf:after {
+        clear: both;
+    }
+}
+footer {
+    height: 53vh;
+    background-color: $black;
+    padding: 60px 40px;
+    #middle {
+        margin-left: -31px;
+    }
+    #last {
+        border-right: 0 !important;
+    }
+    ul {
+        border-right: 1px solid $bg;
+        list-style: none;
+        span {
+            font-weight: bold;
+            font-size: 20px;
+            color: $purple;
+            border-bottom: 0.5px solid $pink;
+        }
+        li {
+            padding: 10px 20px;
+            a {
+                text-decoration: none;
+                color: $bg;
+                font-size: 15px;
+                &:hover {
+                    color: $pink;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .text-center {
+        border-top: 1px solid rgb(31, 31, 31);
+        width: 100%;
+        padding: 10px 10px;
+        span {
+            color: $bg;
+        }
+        a {
+            text-decoration: none;
+            color: $pink;
+            &:hover {
+                color: $purple;
+                text-decoration: none;
             }
         }
     }
