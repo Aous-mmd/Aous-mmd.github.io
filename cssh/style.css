@@ -41,7 +41,7 @@ header .uk-navbar-right:hover {
 
 .header-section {
   margin-top: -80px;
-  background: url(../images/main-bg.jpg);
+  background: url(../imagesh/main-bg.jpg);
   width: 100%;
   height: 120vh;
   background-position: center;
@@ -101,13 +101,13 @@ header .uk-navbar-right:hover {
 .services .container-fluid .row .col-lg-3 .men,
 .services .container-fluid .row .col-md-3 .men,
 .services .container-fluid .row .col-sm-1 .men {
-  background: url(../images/men.jpg);
+  background: url(../imagesh/men.jpg);
 }
 
 .services .container-fluid .row .col-lg-3 .women,
 .services .container-fluid .row .col-md-3 .women,
 .services .container-fluid .row .col-sm-1 .women {
-  background: url(../images/women.jpg);
+  background: url(../imagesh/women.jpg);
 }
 
 .services .container-fluid .row .col-lg-3 .men,
@@ -269,49 +269,49 @@ header .uk-navbar-right:hover {
 .gallery .container-fluid .row .col-lg-3 .p1,
 .gallery .container-fluid .row .col-md-3 .p1,
 .gallery .container-fluid .row .col-sm-1 .p1 {
-  background: url(../images/p1.jpg);
+  background: url(../imagesh/p1.jpg);
 }
 
 .gallery .container-fluid .row .col-lg-3 .p2,
 .gallery .container-fluid .row .col-md-3 .p2,
 .gallery .container-fluid .row .col-sm-1 .p2 {
-  background: url(../images/p2.jpg);
+  background: url(../imagesh/p2.jpg);
 }
 
 .gallery .container-fluid .row .col-lg-3 .p3,
 .gallery .container-fluid .row .col-md-3 .p3,
 .gallery .container-fluid .row .col-sm-1 .p3 {
-  background: url(../images/p3.jpg);
+  background: url(../imagesh/p3.jpg);
 }
 
 .gallery .container-fluid .row .col-lg-3 .p4,
 .gallery .container-fluid .row .col-md-3 .p4,
 .gallery .container-fluid .row .col-sm-1 .p4 {
-  background: url(../images/p4.jpg);
+  background: url(../imagesh/p4.jpg);
 }
 
 .gallery .container-fluid .row .col-lg-3 .p5,
 .gallery .container-fluid .row .col-md-3 .p5,
 .gallery .container-fluid .row .col-sm-1 .p5 {
-  background: url(../images/p5.jpg);
+  background: url(../imagesh/p5.jpg);
 }
 
 .gallery .container-fluid .row .col-lg-3 .p6,
 .gallery .container-fluid .row .col-md-3 .p6,
 .gallery .container-fluid .row .col-sm-1 .p6 {
-  background: url(../images/p6.jpg);
+  background: url(../imagesh/p6.jpg);
 }
 
 .gallery .container-fluid .row .col-lg-3 .p7,
 .gallery .container-fluid .row .col-md-3 .p7,
 .gallery .container-fluid .row .col-sm-1 .p7 {
-  background: url(../images/p7.jpg);
+  background: url(../imagesh/p7.jpg);
 }
 
 .gallery .container-fluid .row .col-lg-3 .p8,
 .gallery .container-fluid .row .col-md-3 .p8,
 .gallery .container-fluid .row .col-sm-1 .p8 {
-  background: url(../images/p1.jpg);
+  background: url(../imagesh/p1.jpg);
 }
 
 .gallery .container-fluid .row .col-lg-3 .p1,
