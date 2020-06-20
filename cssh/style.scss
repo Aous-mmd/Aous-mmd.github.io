@@ -539,3 +539,112 @@ footer {
         }
     }
 }
+@media only screen and (max-width: 750px) {
+    #loading {
+        .cycles {
+            top: calc(60% - 20px) !important;
+        }
+        #loading-image {
+            top: 10 !important;
+            margin-left: 20px !important;
+            height: 35% !important;
+        }
+    }
+    .mob-nav {
+        z-index: 5555 !important;
+        display: block !important;
+        margin-top: -20px !important;
+        .uk-navbar-sticky {
+            .uk-navbar-left {
+                margin-left: 0 !important;
+                img {
+                    margin-top: 0 !important;
+                }
+            }
+        }
+        .uk-navbar-left {
+            margin-left: 0 !important;
+            img {
+                margin-top: 20px !important;
+            }
+        }
+        .uk-navbar-right {
+            margin-right: 20px !important;
+            svg {
+                transition: all 0.3s ease-in-out !important;
+                margin-top: 10px !important;
+            }
+        }
+        #offcanvas-usage {
+            transition: all 0.3s ease-in-out !important;
+            .uk-offcanvas-bar {
+                background: $black !important;
+                ul {
+                    padding-top: 50px !important;
+                    list-style: none !important;
+                    li {
+                        padding-top: 10px !important;
+                        a {
+                            color: $pink !important;
+                            &:hover {
+                                color: $purple !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lap-nav {
+        display: none !important;
+    }
+    .header-section {
+        width: 100% !important;
+        height: 80vh !important;
+        .header-text {
+            h1 {
+                font-size: 35px !important;
+            }
+            h5 {
+                font-size: 18px !important;
+            }
+        }
+    }
+    .men-desc {
+        margin-left: 23px !important;
+    }
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7,
+    .p8 {
+        margin-top: 5px !important;
+    }
+    .half {
+        p {
+            display: none !important;
+        }
+    }
+    footer {
+        .text-left {
+            text-align: center !important;
+        }
+        #middle {
+            margin-left: 0 !important;
+        }
+        ul {
+            border-right: 0 !important;
+            li {
+                font-size: 15px !important;
+            }
+        }
+        .text-center {
+            .mob-br {
+                display: block !important;
+            }
+        }
+    }
+}

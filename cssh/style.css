@@ -823,4 +823,104 @@ footer .text-center a:hover {
   color: #310276;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 750px) {
+  #loading .cycles {
+    top: calc(60% - 20px) !important;
+  }
+  #loading #loading-image {
+    top: 10 !important;
+    margin-left: 20px !important;
+    height: 35% !important;
+  }
+  .mob-nav {
+    z-index: 5555 !important;
+    display: block !important;
+    margin-top: -20px !important;
+  }
+  .mob-nav .uk-navbar-sticky .uk-navbar-left {
+    margin-left: 0 !important;
+  }
+  .mob-nav .uk-navbar-sticky .uk-navbar-left img {
+    margin-top: 0 !important;
+  }
+  .mob-nav .uk-navbar-left {
+    margin-left: 0 !important;
+  }
+  .mob-nav .uk-navbar-left img {
+    margin-top: 20px !important;
+  }
+  .mob-nav .uk-navbar-right {
+    margin-right: 20px !important;
+  }
+  .mob-nav .uk-navbar-right svg {
+    -webkit-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
+    margin-top: 10px !important;
+  }
+  .mob-nav #offcanvas-usage {
+    -webkit-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar {
+    background: black !important;
+  }
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar ul {
+    padding-top: 50px !important;
+    list-style: none !important;
+  }
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li {
+    padding-top: 10px !important;
+  }
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li a {
+    color: #f10691 !important;
+  }
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li a:hover {
+    color: #310276 !important;
+  }
+  .lap-nav {
+    display: none !important;
+  }
+  .header-section {
+    width: 100% !important;
+    height: 80vh !important;
+  }
+  .header-section .header-text h1 {
+    font-size: 35px !important;
+  }
+  .header-section .header-text h5 {
+    font-size: 18px !important;
+  }
+  .men-desc {
+    margin-left: 23px !important;
+  }
+  .p1,
+  .p2,
+  .p3,
+  .p4,
+  .p5,
+  .p6,
+  .p7,
+  .p8 {
+    margin-top: 5px !important;
+  }
+  .half p {
+    display: none !important;
+  }
+  footer .text-left {
+    text-align: center !important;
+  }
+  footer #middle {
+    margin-left: 0 !important;
+  }
+  footer ul {
+    border-right: 0 !important;
+  }
+  footer ul li {
+    font-size: 15px !important;
+  }
+  footer .text-center .mob-br {
+    display: block !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
