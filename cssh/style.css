@@ -172,6 +172,16 @@ header .mob-nav {
 }
 
 @media only screen and (max-width: 750px) {
+  #loading .cycles {
+    top: calc(60% - 20px);
+  }
+  #loading #loading-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    z-index: 100;
+  }
   .mob-nav {
     z-index: 5555;
     display: block !important;
@@ -193,25 +203,28 @@ header .mob-nav {
     margin-right: 20px !important;
   }
   .mob-nav .uk-navbar-right svg {
-    -webkit-transition: all .3s ease-in-out !important;
-    transition: all .3s ease-in-out !important;
+    -webkit-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
     margin-top: 10px !important;
   }
   .mob-nav #offcanvas-usage {
-    -webkit-transition: all .3s ease-in-out !important;
-    transition: all .3s ease-in-out !important;
+    -webkit-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
   }
   .mob-nav #offcanvas-usage .uk-offcanvas-bar {
     background: black;
   }
   .mob-nav #offcanvas-usage .uk-offcanvas-bar ul {
-    padding-top: 20px;
+    padding-top: 50px;
     list-style: none;
   }
   .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li {
+    padding-top: 10px;
+  }
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li a {
     color: #f10691;
   }
-  .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li:hover {
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li a:hover {
     color: #310276;
   }
   .lap-nav {
@@ -231,7 +244,14 @@ header .mob-nav {
   .men-desc {
     margin-left: 23px !important;
   }
-  .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8 {
+  .p1,
+  .p2,
+  .p3,
+  .p4,
+  .p5,
+  .p6,
+  .p7,
+  .p8 {
     margin-top: 5px !important;
   }
   .half p {

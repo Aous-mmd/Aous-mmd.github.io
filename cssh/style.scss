@@ -16,7 +16,6 @@ $sec-text: #424242;
     background-color: $black;
     z-index: 99;
     text-align: center;
-
     #loading-image {
         position: absolute;
         top: 50px;
@@ -137,6 +136,18 @@ header {
     z-index: 0;
 }
 @media only screen and (max-width: 750px) {
+    #loading {
+        .cycles {
+            top: calc(60% - 20px);
+        }
+        #loading-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 70%;
+            z-index: 100;
+        }
+    }
     .mob-nav {
         z-index: 5555;
         display: block !important;
@@ -158,21 +169,24 @@ header {
         .uk-navbar-right {
             margin-right: 20px !important;
             svg {
-                transition: all .3s ease-in-out !important;
+                transition: all 0.3s ease-in-out !important;
                 margin-top: 10px !important;
             }
         }
         #offcanvas-usage {
-            transition: all .3s ease-in-out !important;
+            transition: all 0.3s ease-in-out !important;
             .uk-offcanvas-bar {
                 background: $black;
                 ul {
-                    padding-top: 20px;
+                    padding-top: 50px;
                     list-style: none;
                     li {
-                        color: $pink;
-                        &:hover {
-                            color: $purple;
+                        padding-top: 10px;
+                        a {
+                            color: $pink;
+                            &:hover {
+                                color: $purple;
+                            }
                         }
                     }
                 }
@@ -187,18 +201,25 @@ header {
         width: 120% !important;
         height: 80vh !important;
         .header-text {
-           h1 {
-               font-size: 35px !important;
-           }
-           h5 {
-               font-size: 18px !important;
-           }
+            h1 {
+                font-size: 35px !important;
+            }
+            h5 {
+                font-size: 18px !important;
+            }
         }
     }
     .men-desc {
         margin-left: 23px !important;
     }
-    .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8 {
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6,
+    .p7,
+    .p8 {
         margin-top: 5px !important;
     }
     .half {
