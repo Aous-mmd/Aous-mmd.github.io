@@ -177,7 +177,7 @@ header .mob-nav {
   }
   #loading #loading-image {
     top: 10 !important;
-    left: 10 !important;
+    left: 2 !important;
     height: 35% !important;
   }
   .mob-nav {
