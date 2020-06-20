@@ -142,6 +142,7 @@ header {
         }
         #loading-image {
             top: 10 !important;
+            left: 10 !important;
             height: 35% !important;
         }
     }
@@ -233,7 +234,7 @@ header {
         ul {
             border-right: 0 !important;
             li {
-                font-size: 15px;
+                font-size: 15px !important;
             }
         }
         .text-center {
