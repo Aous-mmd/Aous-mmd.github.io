@@ -176,16 +176,16 @@ header {
         #offcanvas-usage {
             transition: all 0.3s ease-in-out !important;
             .uk-offcanvas-bar {
-                background: $black;
+                background: $black !important;
                 ul {
-                    padding-top: 50px;
-                    list-style: none;
+                    padding-top: 50px !important;
+                    list-style: none !important;
                     li {
-                        padding-top: 10px;
+                        padding-top: 10px !important;
                         a {
-                            color: $pink;
+                            color: $pink !important;
                             &:hover {
-                                color: $purple;
+                                color: $purple !important;
                             }
                         }
                     }
@@ -198,7 +198,7 @@ header {
     }
     .header-section {
         overflow: hidden;
-        width: 120% !important;
+        width: 100% !important;
         height: 80vh !important;
         .header-text {
             h1 {

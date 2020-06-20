@@ -212,27 +212,27 @@ header .mob-nav {
     transition: all 0.3s ease-in-out !important;
   }
   .mob-nav #offcanvas-usage .uk-offcanvas-bar {
-    background: black;
+    background: black !important;
   }
   .mob-nav #offcanvas-usage .uk-offcanvas-bar ul {
-    padding-top: 50px;
-    list-style: none;
+    padding-top: 50px !important;
+    list-style: none !important;
   }
   .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li {
-    padding-top: 10px;
+    padding-top: 10px !important;
   }
   .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li a {
-    color: #f10691;
+    color: #f10691 !important;
   }
   .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li a:hover {
-    color: #310276;
+    color: #310276 !important;
   }
   .lap-nav {
     display: none !important;
   }
   .header-section {
     overflow: hidden;
-    width: 120% !important;
+    width: 100% !important;
     height: 80vh !important;
   }
   .header-section .header-text h1 {
