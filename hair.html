@@ -8,120 +8,109 @@
     <link rel="icon" type="image/png" href="imagesh/logo.png">
     <link rel="stylesheet" href="cssh/bootstrap.min.css">
     <link rel="stylesheet" href="cssh/uikit.min.css">
-    <link rel="stylesheet" href="cssh/uikit-rtl.min.css">
     <link rel="stylesheet" href="cssh/style.css">
 </head>
 
-<body>
+<body class="bg-light">
     <main>
         <header>
-            <div class="lap-nav">
-                <div
-                    uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
-
-                    <nav class="uk-navbar-container" uk-navbar>
-
-                        <div class="uk-navbar-left">
-                            <a href="index.html" class="uk-navbar-item uk-logo">
-                                <img src="imagesh/main-logo.png" width="150px" height="60px" alt="Hair Booking"
-                                    class="img-fluid" uk-img>
-                            </a>
-                        </div>
-                        <div class="uk-navbar-right">
-                            <ul class="uk-navbar-nav">
-                                <li class="uk-active">
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                    <div class="uk-navbar-dropdown">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-active"><a href="men.html">For men</a></li>
-                                            <li><a href="#">For women</a></li>
-                                            <li><a href="#">Mix</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="">
-                                    <a href="#">About</a>
-                                </li>
-                                <li class="">
-                                    <a href="#">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="#">User</a>
-                                    <div class="uk-navbar-dropdown">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav bottom-center">
-                                            <li><a href="#">Login</a></li>
-                                            <li><a href="#">Logout</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <div class="mob-nav">
-                <div
-                    uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 200">
-                    <nav class="uk-navbar uk-navbar-container uk-margin">
-                        <div class="uk-navbar-left">
-                            <a href="index.html" class="uk-navbar-item uk-logo">
-                                <img src="imagesh/main-logo.png" width="150px" height="60px" alt="Hair Booking"
-                                    class="img-fluid" uk-img>
-                            </a>
-                        </div>
-                        <div class="uk-navbar-right">
-                            <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-usage"></a>
-                        </div>
-                    </nav>
-                </div>
-                <div id="offcanvas-usage" uk-offcanvas>
-                    <div class="uk-offcanvas-bar">
-                        <button class="uk-offcanvas-close" type="button" uk-close></button>
-                        <div class="text-center">
-                            <ul>
-                                <li class="uk-active">
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                    <div class="uk-navbar-dropdown">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-active"><a href="men.html">For men</a></li>
-                                            <li><a href="#">For women</a></li>
-                                            <li><a href="#">Mix</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="">
-                                    <a href="#">About</a>
-                                </li>
-                                <li class="">
-                                    <a href="#">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="#">User</a>
-                                    <div class="uk-navbar-dropdown">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav bottom-center">
-                                            <li><a href="#">Login</a></li>
-                                            <li><a href="#">Logout</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="hair.html">
+                    <img src="imagesh/main-logo.png" alt="Booking Barber" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="center">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="hair.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Services
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact us</a>
+                            </li>
+                        </ul>
                     </div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <button class="btn btn-sm btn-secondary btn-1" type="button">
+                        <a href="login.html">
+                            Login
+                            <svg class="bi bi-people" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.995-.944v-.002.002zM7.022 13h7.956a.274.274 0 0 0 .014-.002l.008-.002c-.002-.264-.167-1.03-.76-1.72C13.688 10.629 12.718 10 11 10c-1.717 0-2.687.63-3.24 1.276-.593.69-.759 1.457-.76 1.72a1.05 1.05 0 0 0 .022.004zm7.973.056v-.002.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10c-1.668.02-2.615.64-3.16 1.276C1.163 11.97 1 12.739 1 13h3c0-1.045.323-2.086.92-3zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                            </svg>
+                        </a>
+                    </button>
+                    <button class="btn  btn-sm btn-secondary btn-2" type="button">
+                        <a href="register.html">
+                            Register
+                            <svg class="bi bi-emoji-sunglasses" width="1em" height="1em" viewBox="0 0 16 16"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path fill-rule="evenodd"
+                                    d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM6.5 6.497V6.5h-1c0-.568.447-.947.862-1.154C6.807 5.123 7.387 5 8 5s1.193.123 1.638.346c.415.207.862.586.862 1.154h-1v-.003l-.003-.01a.213.213 0 0 0-.036-.053.86.86 0 0 0-.27-.194C8.91 6.1 8.49 6 8 6c-.491 0-.912.1-1.19.24a.86.86 0 0 0-.271.194.213.213 0 0 0-.036.054l-.003.01z" />
+                                <path
+                                    d="M2.31 5.243A1 1 0 0 1 3.28 4H6a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2h-.438a2 2 0 0 1-1.94-1.515L2.31 5.243zM9 5a1 1 0 0 1 1-1h2.72a1 1 0 0 1 .97 1.243l-.311 1.242A2 2 0 0 1 11.439 8H11a2 2 0 0 1-2-2V5z" />
+                            </svg>
+                        </a>
+                    </button>
                 </div>
-            </div>
+            </nav>
         </header>
-        <section class="header-section">
-            <div class="uk-overlay-primary uk-position-cover"></div>
-            <div class="header-text text-center">
-                <h5>WELCOME TO BOOKING BARBER</h5>
-                <h1>WE ARE PROFESSIONAL CARE FOR YOUR HAIR</h1>
-                <span uk-icon="icon: chevron-down; ratio: 3.5" class="loop-alternate-infinity"></span><br>
+        <section class="slider">
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1"
+                uk-slideshow="animation: push;autoplay: true;autoplay-interval: 4000">
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="imagesh/main-bg.jpg" alt="Booking barber" uk-cover>
+                        <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                            <h2 class="uk-margin-remove">Center</h2>
+                            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagesh/men.jpg" alt="Booking barber for men" uk-cover>
+                        <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                            <h2 class="uk-margin-remove">Center</h2>
+                            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagesh/women.jpg" alt="Booking barber for women" uk-cover>
+                        <div class="uk-position-center uk-position-small uk-text-center uk-light">
+                            <h2 class="uk-margin-remove">Center</h2>
+                            <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="uk-light">
+                    <a class="uk-position-center-left uk-position-large uk-slidenav-large" href="#" uk-slidenav-previous
+                        uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-large uk-slidenav-large" href="#" uk-slidenav-next
+                        uk-slideshow-item="next"></a>
+                </div>
             </div>
         </section>
         <section class="services">
@@ -256,69 +245,39 @@
                                 Consadas</small>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-1">
-                        <div class="p1">
-                            <div id="overlay">
-                                <h4>Hello</h4>
-                                <p>Hello</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-1">
-                        <div class="p2">
-                            <div id="overlay">
-                                <h4>Hello</h4>
-                                <p>Hello</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-1">
-                        <div class="p3">
-                            <div id="overlay">
-                                <h4>Hello</h4>
-                                <p>Hello</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-1">
-                        <div class="p4">
-                            <div id="overlay">
-                                <h4>Hello</h4>
-                                <p>Hello</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-1">
-                        <div class="p5">
-                            <div id="overlay">
-                                <h4>Hello</h4>
-                                <p>Hello</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-1">
-                        <div class="p6">
-                            <div id="overlay">
-                                <h4>Hello</h4>
-                                <p>Hello</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-1">
-                        <div class="p7">
-                            <div id="overlay">
-                                <h4>Hello</h4>
-                                <p>Hello</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-1">
-                        <div class="p8">
-                            <div id="overlay">
-                                <h4>Hello</h4>
-                                <p>Hello</p>
-                            </div>
-                        </div>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true;autoplay-interval: 3000">
+                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                            <li>
+                                <img src="imagesh/p1.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="imagesh/p2.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="imagesh/p3.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="imagesh/p4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="imagesh/p5.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="imagesh/p6.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="imagesh/p7.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="imagesh/p5.jpg" alt="">
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-large uk-slidenav-large" href="#"
+                            uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-larger uk-slidenav-large" href="#" uk-slidenav-next
+                            uk-slider-item="next"></a>
+                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
                     </div>
                 </div>
             </div>
@@ -385,7 +344,9 @@
                 </div>
             </div>
             <div class="text-center">
-                <span>&copy; All terms reservied to</span><div class="mob-br"></div> <a href="">Booking barber</a><div class="mob-br"></div> <span>| Powered by </span><strong><a
+                <span>&copy; All terms reservied to</span>
+                <div class="mob-br"></div> <a href="">Booking barber</a>
+                <div class="mob-br"></div> <span>| Powered by </span><strong><a
                         href="https://www.facebook.com/aous.mohammad.5" target="_blank">Aous Mohammad</a></strong>
             </div>
         </footer>

@@ -1,176 +1,77 @@
 $black: black;
 $white: white;
-$pink: #f10691;
-$purple: #310276;
+$pink: #ed5887;
+$purple: #373173;
 $overlay: #00000087;
 $bg: #a3a3a378;
 $sec-text: #424242;
 
-#loading {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    display: block;
-    background-color: $black;
-    z-index: 99;
-    text-align: center;
-    #loading-image {
-        position: absolute;
-        top: 50px;
-        left: 450px;
-        height: 70%;
-        z-index: 100;
-    }
-    @keyframes ani_1 {
-        0% {
-            height: 20px;
-            width: 20px;
-            background-color: $purple;
-            margin-top: 10px;
-        }
-
-        50% {
-            height: 10px;
-            width: 10px;
-            background-color: $pink;
-            margin-top: 20px;
-        }
-
-        100% {
-            height: 20px;
-            width: 20px;
-            background-color: $purple;
-            margin-top: 10px;
-        }
-    }
-
-    @keyframes ani_2 {
-        0% {
-            border-bottom: solid 2px $purple;
-        }
-
-        50% {
-            border-bottom: solid 2px $pink;
-        }
-
-        100% {
-            border-bottom: solid 2px $purple;
-        }
-    }
-
-    .cycles {
-        display: inline-block;
-        width: 220px;
-        position: absolute;
-        top: calc(82% - 20px);
-        left: calc(50% - 110px);
-        .cycle {
-            height: 20px;
-            width: 20px;
-            background-color: $pink;
-            display: inline-block;
-            margin: 10px;
-            border-radius: 50%;
-        }
-
-        #cycle1 {
-            animation: ani_1 2s 0s linear infinite;
-        }
-
-        #cycle2 {
-            animation: ani_1 2s 0.3s linear infinite;
-        }
-
-        #cycle3 {
-            animation: ani_1 2s 0.6s linear infinite;
-        }
-
-        #cycle4 {
-            animation: ani_1 2s 0.9s linear infinite;
-        }
-
-        #cycle5 {
-            animation: ani_1 2s 1.2s linear infinite;
-        }
-    }
+body {
+    font-family: "Source Sans Pro", sans-serif !important;
 }
+
 header {
-    .uk-navbar-container:not(.uk-navbar-transparent) {
-        background: $black;
-    }
-    .uk-navbar-left {
-        z-index: 1;
-        margin-left: 110px;
-    }
-    .uk-navbar-right {
-        z-index: 1;
-        margin-right: 50px;
-        font-weight: bold;
-        .uk-active {
+    nav {
+        .center {
+            margin: 0 auto;
+            ul {
+                .active {
+                    a {
+                        color: $pink !important;
+                        &:hover {
+                            color: $purple !important;
+                        }
+                    }
+                }
+                li {
+                    a {
+                        &:hover {
+                            color: $pink !important;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-1,
+        .btn-2 {
+            margin-left: 10px;
             a {
-                color: $pink;
-                border-bottom: 3px solid $purple;
+                color: $white;
+                text-decoration: none;
             }
         }
-        .uk-navbar-dropdown {
-            background: $black;
-        }
-        a {
-            color: $pink;
+        .btn-1 {
+            background-color: $purple;
+            border-color: $purple;
             &:hover {
-                color: $purple;
+                background-color: $pink;
+                border-color: $pink;
             }
         }
-        &:hover {
-            cursor: pointer;
+        .btn-2 {
+            background-color: $pink;
+            border-color: $pink;
+            &:hover {
+                background-color: $purple;
+                border-color: $purple;
+            }
+        }
+        img {
+            width: 150px;
         }
     }
-    .mob-nav {
-        display: none;
-    }
 }
-.uk-overlay-primary {
-    background: $overlay;
-    z-index: 0;
-}
-
-.mob-br {
-    display: none;
-}
-.header-section {
-    margin-top: -80px;
-    background: url(../imagesh/main-bg.jpg);
-    width: 100%;
-    height: 119.5vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    .uk-overlay-primary {
-        height: inherit;
-    }
-    .header-text {
-        padding-top: 25vh;
-        position: absolute;
-        h1 {
-            color: $white;
-            font-weight: bolder;
-            font-size: 60px;
-            line-height: 1.1;
-        }
-        h5 {
-            color: $pink;
-            font-weight: bold;
-            text-shadow: 1px 2px $purple;
-        }
-        .loop-alternate-infinity {
-            z-index: 2;
-            color: $purple;
-            margin-top: 100px;
-        }
-        span {
-            margin-top: 150px;
+.slider {
+    ul {
+        li {
+            h2 {
+                text-shadow: 2px 2px $purple;
+                color: $pink;
+            }
+            p {
+                text-shadow: 2px 2px $purple;
+                color: $white;
+            }
         }
     }
 }
@@ -270,8 +171,12 @@ header {
 .icons,
 .gallery {
     border-top: 1px solid rgba(31, 31, 31, 0.308);
-    background-color: $bg;
     padding-top: 50px;
+    padding-bottom: 30px;
+    .col-lg-3, .col-md-3 {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
     h5 {
         color: $purple;
         font-weight: bold;
@@ -306,70 +211,13 @@ header {
         .row {
             margin-right: 0;
             margin-left: 0;
-            .col-lg-3,
-            .col-md-3,
-            .col-sm-1 {
-                padding-right: 0;
-                padding-left: 0;
-                .p1 {
-                    background: url(../imagesh/p1.jpg);
-                }
-                .p2 {
-                    background: url(../imagesh/p2.jpg);
-                }
-                .p3 {
-                    background: url(../imagesh/p3.jpg);
-                }
-                .p4 {
-                    background: url(../imagesh/p4.jpg);
-                }
-                .p5 {
-                    background: url(../imagesh/p5.jpg);
-                }
-                .p6 {
-                    background: url(../imagesh/p6.jpg);
-                }
-                .p7 {
-                    background: url(../imagesh/p7.jpg);
-                }
-                .p8 {
-                    background: url(../imagesh/p1.jpg);
-                }
-                .p1,
-                .p2,
-                .p3,
-                .p4,
-                .p5,
-                .p6,
-                .p7,
-                .p8 {
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    width: 100%;
-                    height: 400px;
-                    #overlay {
-                        width: inherit;
-                        height: inherit;
-                        background: #30027662;
-                        text-align: center;
-                        padding: 45px 0 66px 0;
-                        opacity: 0;
-                        transition: opacity 0.25s ease;
-                        &:hover {
-                            opacity: 1;
-                        }
-                        p {
-                            color: $pink;
-                            transform: rotate(270deg);
-                            margin-left: -280px;
-                            margin-top: 55px;
-                        }
-                        h4 {
-                            color: $pink;
-                            margin-left: -155px;
-                            margin-top: -30px;
-                        }
+            .col-lg-12 {
+                padding-bottom: 20px;
+            }
+            ul {
+                .uk-active {
+                    a {
+                        background-color: $purple !important;
                     }
                 }
             }
@@ -378,7 +226,6 @@ header {
 }
 .contact {
     padding: 50px 0;
-    background-color: $bg;
     h1 {
         text-align: center;
         color: $purple;
@@ -472,8 +319,7 @@ header {
     }
 }
 footer {
-    background-color: $black;
-    padding: 60px 40px;
+    padding: 60px 40px;;
     #middle {
         margin-left: -31px;
     }
@@ -500,7 +346,7 @@ footer {
         }
     }
     ul {
-        border-right: 1px solid $bg;
+        border-right: 1px solid $sec-text;
         list-style: none;
         span {
             font-weight: bold;
@@ -510,10 +356,10 @@ footer {
         }
         li {
             padding: 10px 20px;
-            color: $white;
+            color: $sec-text;
             a {
                 text-decoration: none;
-                color: $white;
+                color: $sec-text;
                 font-size: 15px;
                 &:hover {
                     color: $pink;
@@ -525,9 +371,10 @@ footer {
     .text-center {
         border-top: 1px solid rgb(31, 31, 31);
         width: 100%;
-        padding: 10px 10px;
+        padding-bottom: 0;
+        padding-top: 20px;
         span {
-            color: $bg;
+            color: $sec-text;
         }
         a {
             text-decoration: none;
@@ -539,89 +386,12 @@ footer {
         }
     }
 }
+.mob-br {
+    display: none;
+}
 @media only screen and (max-width: 750px) {
-    #loading {
-        .cycles {
-            top: calc(60% - 20px) !important;
-        }
-        #loading-image {
-            top: 10 !important;
-            margin-left: 20px !important;
-            height: 35% !important;
-        }
-    }
-    .mob-nav {
-        z-index: 5555 !important;
-        display: block !important;
-        margin-top: -20px !important;
-        .uk-navbar-sticky {
-            .uk-navbar-left {
-                margin-left: 0 !important;
-                img {
-                    margin-top: 0 !important;
-                }
-            }
-        }
-        .uk-navbar-left {
-            margin-left: 0 !important;
-            img {
-                margin-top: 20px !important;
-            }
-        }
-        .uk-navbar-right {
-            margin-right: 20px !important;
-            svg {
-                transition: all 0.3s ease-in-out !important;
-                margin-top: 10px !important;
-            }
-        }
-        #offcanvas-usage {
-            transition: all 0.3s ease-in-out !important;
-            .uk-offcanvas-bar {
-                background: $black !important;
-                ul {
-                    padding-top: 50px !important;
-                    list-style: none !important;
-                    li {
-                        padding-top: 10px !important;
-                        a {
-                            color: $pink !important;
-                            &:hover {
-                                color: $purple !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .lap-nav {
-        display: none !important;
-    }
-    .header-section {
-        width: 100% !important;
-        height: 80vh !important;
-        .header-text {
-            h1 {
-                font-size: 35px !important;
-            }
-            h5 {
-                font-size: 18px !important;
-            }
-        }
-    }
     .men-desc {
         margin-left: 23px !important;
-    }
-    .p1,
-    .p2,
-    .p3,
-    .p4,
-    .p5,
-    .p6,
-    .p7,
-    .p8 {
-        margin-top: 5px !important;
     }
     .half {
         p {
@@ -647,4 +417,19 @@ footer {
             }
         }
     }
+}
+.uk-card-primary.uk-card-body .uk-dotnav > * > *,
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-dotnav > * > *,
+.uk-card-secondary.uk-card-body .uk-dotnav > * > *,
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-dotnav > * > *,
+.uk-light .uk-dotnav > * > *,
+.uk-offcanvas-bar .uk-dotnav > * > *,
+.uk-overlay-primary .uk-dotnav > * > *,
+.uk-section-primary:not(.uk-preserve-color) .uk-dotnav > * > *,
+.uk-section-secondary:not(.uk-preserve-color) .uk-dotnav > * > *,
+.uk-tile-primary:not(.uk-preserve-color) .uk-dotnav > * > *,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-dotnav > * > * {
+    background-color: transparent;
+    border-color: $pink !important;
+
 }
