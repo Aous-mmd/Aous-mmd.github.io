@@ -204,10 +204,21 @@ header .mob-nav {
   .mob-nav #offcanvas-usage .uk-offcanvas-bar {
     background: black;
   }
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar ul {
+    padding-top: 20px;
+    list-style: none;
+  }
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li {
+    color: #f10691;
+  }
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar ul li:hover {
+    color: #310276;
+  }
   .lap-nav {
     display: none !important;
   }
   .header-section {
+    overflow: hidden;
     width: 120% !important;
     height: 80vh !important;
   }
