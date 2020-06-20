@@ -142,9 +142,9 @@ header {
         }
         #loading-image {
             position: absolute;
-            top: 0;
+            top: 10;
             left: 0;
-            height: 70%;
+            height: 35%;
             z-index: 100;
         }
     }
@@ -237,13 +237,15 @@ header {
             border-right: 0 !important;
         }
         .text-center {
-            span {
-                font-size: 20px;
+            .mob-br {
+                display: block;
             }
         }
     }
 }
-
+.mob-br {
+    display: none;
+}
 .header-section {
     margin-top: -80px;
     background: url(../imagesh/main-bg.jpg);

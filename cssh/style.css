@@ -177,9 +177,9 @@ header .mob-nav {
   }
   #loading #loading-image {
     position: absolute;
-    top: 0;
+    top: 10;
     left: 0;
-    height: 70%;
+    height: 35%;
     z-index: 100;
   }
   .mob-nav {
@@ -265,9 +265,13 @@ header .mob-nav {
   footer ul {
     border-right: 0 !important;
   }
-  footer .text-center span {
-    font-size: 20px;
+  footer .text-center .mob-br {
+    display: block;
   }
+}
+
+.mob-br {
+  display: none;
 }
 
 .header-section {
