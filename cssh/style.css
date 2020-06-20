@@ -162,9 +162,79 @@ header .uk-navbar-right:hover {
   cursor: pointer;
 }
 
+header .mob-nav {
+  display: none;
+}
+
 .uk-overlay-primary {
   background: #00000087;
   z-index: 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .mob-nav {
+    z-index: 5555;
+    display: block !important;
+    margin-top: -20px !important;
+  }
+  .mob-nav .uk-navbar-sticky .uk-navbar-left {
+    margin-left: 0 !important;
+  }
+  .mob-nav .uk-navbar-sticky .uk-navbar-left img {
+    margin-top: 0 !important;
+  }
+  .mob-nav .uk-navbar-left {
+    margin-left: 0 !important;
+  }
+  .mob-nav .uk-navbar-left img {
+    margin-top: 20px !important;
+  }
+  .mob-nav .uk-navbar-right {
+    margin-right: 20px !important;
+  }
+  .mob-nav .uk-navbar-right svg {
+    -webkit-transition: all .3s ease-in-out !important;
+    transition: all .3s ease-in-out !important;
+    margin-top: 10px !important;
+  }
+  .mob-nav #offcanvas-usage {
+    -webkit-transition: all .3s ease-in-out !important;
+    transition: all .3s ease-in-out !important;
+  }
+  .mob-nav #offcanvas-usage .uk-offcanvas-bar {
+    background: black;
+  }
+  .lap-nav {
+    display: none !important;
+  }
+  .header-section {
+    width: 120% !important;
+    height: 80vh !important;
+  }
+  .header-section .header-text h1 {
+    font-size: 35px !important;
+  }
+  .header-section .header-text h5 {
+    font-size: 18px !important;
+  }
+  .men-desc {
+    margin-left: 23px !important;
+  }
+  .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8 {
+    margin-top: 5px !important;
+  }
+  .half p {
+    display: none !important;
+  }
+  footer .text-left {
+    text-align: center !important;
+  }
+  footer #middle {
+    margin-left: 0 !important;
+  }
+  footer ul {
+    border-right: 0 !important;
+  }
 }
 
 .header-section {
@@ -364,7 +434,6 @@ header .uk-navbar-right:hover {
 .icons,
 .gallery {
   border-top: 1px solid rgba(31, 31, 31, 0.308);
-  height: 100vh;
   background-color: #a3a3a378;
   padding-top: 50px;
 }
@@ -401,6 +470,12 @@ header .uk-navbar-right:hover {
 .icons .icon-ser strong,
 .gallery .icon-ser strong {
   color: #310276;
+}
+
+.icons .icon-ser p,
+.gallery .icon-ser p {
+  color: #424242;
+  font-size: 16px;
 }
 
 .gallery .container-fluid {
@@ -499,11 +574,129 @@ header .uk-navbar-right:hover {
   height: 400px;
 }
 
+.gallery .container-fluid .row .col-lg-3 .p1 #overlay,
+.gallery .container-fluid .row .col-lg-3 .p2 #overlay,
+.gallery .container-fluid .row .col-lg-3 .p3 #overlay,
+.gallery .container-fluid .row .col-lg-3 .p4 #overlay,
+.gallery .container-fluid .row .col-lg-3 .p5 #overlay,
+.gallery .container-fluid .row .col-lg-3 .p6 #overlay,
+.gallery .container-fluid .row .col-lg-3 .p7 #overlay,
+.gallery .container-fluid .row .col-lg-3 .p8 #overlay,
+.gallery .container-fluid .row .col-md-3 .p1 #overlay,
+.gallery .container-fluid .row .col-md-3 .p2 #overlay,
+.gallery .container-fluid .row .col-md-3 .p3 #overlay,
+.gallery .container-fluid .row .col-md-3 .p4 #overlay,
+.gallery .container-fluid .row .col-md-3 .p5 #overlay,
+.gallery .container-fluid .row .col-md-3 .p6 #overlay,
+.gallery .container-fluid .row .col-md-3 .p7 #overlay,
+.gallery .container-fluid .row .col-md-3 .p8 #overlay,
+.gallery .container-fluid .row .col-sm-1 .p1 #overlay,
+.gallery .container-fluid .row .col-sm-1 .p2 #overlay,
+.gallery .container-fluid .row .col-sm-1 .p3 #overlay,
+.gallery .container-fluid .row .col-sm-1 .p4 #overlay,
+.gallery .container-fluid .row .col-sm-1 .p5 #overlay,
+.gallery .container-fluid .row .col-sm-1 .p6 #overlay,
+.gallery .container-fluid .row .col-sm-1 .p7 #overlay,
+.gallery .container-fluid .row .col-sm-1 .p8 #overlay {
+  width: inherit;
+  height: inherit;
+  background: #30027662;
+  text-align: center;
+  padding: 45px 0 66px 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+
+.gallery .container-fluid .row .col-lg-3 .p1 #overlay:hover,
+.gallery .container-fluid .row .col-lg-3 .p2 #overlay:hover,
+.gallery .container-fluid .row .col-lg-3 .p3 #overlay:hover,
+.gallery .container-fluid .row .col-lg-3 .p4 #overlay:hover,
+.gallery .container-fluid .row .col-lg-3 .p5 #overlay:hover,
+.gallery .container-fluid .row .col-lg-3 .p6 #overlay:hover,
+.gallery .container-fluid .row .col-lg-3 .p7 #overlay:hover,
+.gallery .container-fluid .row .col-lg-3 .p8 #overlay:hover,
+.gallery .container-fluid .row .col-md-3 .p1 #overlay:hover,
+.gallery .container-fluid .row .col-md-3 .p2 #overlay:hover,
+.gallery .container-fluid .row .col-md-3 .p3 #overlay:hover,
+.gallery .container-fluid .row .col-md-3 .p4 #overlay:hover,
+.gallery .container-fluid .row .col-md-3 .p5 #overlay:hover,
+.gallery .container-fluid .row .col-md-3 .p6 #overlay:hover,
+.gallery .container-fluid .row .col-md-3 .p7 #overlay:hover,
+.gallery .container-fluid .row .col-md-3 .p8 #overlay:hover,
+.gallery .container-fluid .row .col-sm-1 .p1 #overlay:hover,
+.gallery .container-fluid .row .col-sm-1 .p2 #overlay:hover,
+.gallery .container-fluid .row .col-sm-1 .p3 #overlay:hover,
+.gallery .container-fluid .row .col-sm-1 .p4 #overlay:hover,
+.gallery .container-fluid .row .col-sm-1 .p5 #overlay:hover,
+.gallery .container-fluid .row .col-sm-1 .p6 #overlay:hover,
+.gallery .container-fluid .row .col-sm-1 .p7 #overlay:hover,
+.gallery .container-fluid .row .col-sm-1 .p8 #overlay:hover {
+  opacity: 1;
+}
+
+.gallery .container-fluid .row .col-lg-3 .p1 #overlay p,
+.gallery .container-fluid .row .col-lg-3 .p2 #overlay p,
+.gallery .container-fluid .row .col-lg-3 .p3 #overlay p,
+.gallery .container-fluid .row .col-lg-3 .p4 #overlay p,
+.gallery .container-fluid .row .col-lg-3 .p5 #overlay p,
+.gallery .container-fluid .row .col-lg-3 .p6 #overlay p,
+.gallery .container-fluid .row .col-lg-3 .p7 #overlay p,
+.gallery .container-fluid .row .col-lg-3 .p8 #overlay p,
+.gallery .container-fluid .row .col-md-3 .p1 #overlay p,
+.gallery .container-fluid .row .col-md-3 .p2 #overlay p,
+.gallery .container-fluid .row .col-md-3 .p3 #overlay p,
+.gallery .container-fluid .row .col-md-3 .p4 #overlay p,
+.gallery .container-fluid .row .col-md-3 .p5 #overlay p,
+.gallery .container-fluid .row .col-md-3 .p6 #overlay p,
+.gallery .container-fluid .row .col-md-3 .p7 #overlay p,
+.gallery .container-fluid .row .col-md-3 .p8 #overlay p,
+.gallery .container-fluid .row .col-sm-1 .p1 #overlay p,
+.gallery .container-fluid .row .col-sm-1 .p2 #overlay p,
+.gallery .container-fluid .row .col-sm-1 .p3 #overlay p,
+.gallery .container-fluid .row .col-sm-1 .p4 #overlay p,
+.gallery .container-fluid .row .col-sm-1 .p5 #overlay p,
+.gallery .container-fluid .row .col-sm-1 .p6 #overlay p,
+.gallery .container-fluid .row .col-sm-1 .p7 #overlay p,
+.gallery .container-fluid .row .col-sm-1 .p8 #overlay p {
+  color: #f10691;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  margin-left: -280px;
+  margin-top: 55px;
+}
+
+.gallery .container-fluid .row .col-lg-3 .p1 #overlay h4,
+.gallery .container-fluid .row .col-lg-3 .p2 #overlay h4,
+.gallery .container-fluid .row .col-lg-3 .p3 #overlay h4,
+.gallery .container-fluid .row .col-lg-3 .p4 #overlay h4,
+.gallery .container-fluid .row .col-lg-3 .p5 #overlay h4,
+.gallery .container-fluid .row .col-lg-3 .p6 #overlay h4,
+.gallery .container-fluid .row .col-lg-3 .p7 #overlay h4,
+.gallery .container-fluid .row .col-lg-3 .p8 #overlay h4,
+.gallery .container-fluid .row .col-md-3 .p1 #overlay h4,
+.gallery .container-fluid .row .col-md-3 .p2 #overlay h4,
+.gallery .container-fluid .row .col-md-3 .p3 #overlay h4,
+.gallery .container-fluid .row .col-md-3 .p4 #overlay h4,
+.gallery .container-fluid .row .col-md-3 .p5 #overlay h4,
+.gallery .container-fluid .row .col-md-3 .p6 #overlay h4,
+.gallery .container-fluid .row .col-md-3 .p7 #overlay h4,
+.gallery .container-fluid .row .col-md-3 .p8 #overlay h4,
+.gallery .container-fluid .row .col-sm-1 .p1 #overlay h4,
+.gallery .container-fluid .row .col-sm-1 .p2 #overlay h4,
+.gallery .container-fluid .row .col-sm-1 .p3 #overlay h4,
+.gallery .container-fluid .row .col-sm-1 .p4 #overlay h4,
+.gallery .container-fluid .row .col-sm-1 .p5 #overlay h4,
+.gallery .container-fluid .row .col-sm-1 .p6 #overlay h4,
+.gallery .container-fluid .row .col-sm-1 .p7 #overlay h4,
+.gallery .container-fluid .row .col-sm-1 .p8 #overlay h4 {
+  color: #f10691;
+  margin-left: -155px;
+  margin-top: -30px;
+}
+
 .contact {
-  display: block;
-  margin-top: 331px;
   padding: 50px 0;
-  height: 80vh;
   background-color: #a3a3a378;
   /* Clearfix */
 }
@@ -565,6 +758,18 @@ header .uk-navbar-right:hover {
   margin-bottom: 1em;
 }
 
+.contact .half p {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  margin-left: -166px;
+  position: absolute;
+  margin-top: 140px;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-bottom: 1px solid black;
+}
+
 .contact .right {
   width: 50%;
 }
@@ -594,7 +799,6 @@ header .uk-navbar-right:hover {
 }
 
 footer {
-  height: 53vh;
   background-color: black;
   padding: 60px 40px;
 }
@@ -605,6 +809,33 @@ footer #middle {
 
 footer #last {
   border-right: 0 !important;
+}
+
+footer #last .facebook,
+footer #last .twitter,
+footer #last .instagram {
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+footer #last .facebook:hover,
+footer #last .twitter:hover,
+footer #last .instagram:hover {
+  background: #310276;
+  color: #f10691;
+}
+
+footer #last .facebook {
+  background: #4040b9;
+}
+
+footer #last .twitter {
+  background: #23aeff;
+}
+
+footer #last .instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 footer ul {
@@ -621,11 +852,12 @@ footer ul span {
 
 footer ul li {
   padding: 10px 20px;
+  color: white;
 }
 
 footer ul li a {
   text-decoration: none;
-  color: #a3a3a378;
+  color: white;
   font-size: 15px;
 }
 
