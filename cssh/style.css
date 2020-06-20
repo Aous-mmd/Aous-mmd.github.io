@@ -231,7 +231,6 @@ header .mob-nav {
     display: none !important;
   }
   .header-section {
-    overflow: hidden;
     width: 100% !important;
     height: 80vh !important;
   }
@@ -265,6 +264,9 @@ header .mob-nav {
   }
   footer ul {
     border-right: 0 !important;
+  }
+  footer .text-center span {
+    display: block;
   }
 }
 

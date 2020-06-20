@@ -197,7 +197,6 @@ header {
         display: none !important;
     }
     .header-section {
-        overflow: hidden;
         width: 100% !important;
         height: 80vh !important;
         .header-text {
@@ -236,6 +235,11 @@ header {
         }
         ul {
             border-right: 0 !important;
+        }
+        .text-center {
+            span {
+                display: block;
+            }
         }
     }
 }
