@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>العقيلة | تواصل معنا</title>
+    <link rel="icon" type="image/png" href="images/Group 757.png">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo nav.png" alt="العقيلة للتأمين">
+                </a>
+                <button class="navbar-toggler" uk-toggle="target: #offcanvas-nav-primary">
+                    <span class="navbar-toggler-icon" uk-icon="icon: menu"></span>
+                </button>
+                <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true;flip: true">
+                    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <img src="images/logo nav.png" alt="">
+                        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">الصفحة الرئيسية <span
+                                        class="sr-only">(current)</span></a>
+                                <span id="dash"></span>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    عن الشركة
+                                </a>
+                                <span id="dash"></span>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="about-us.html">من نحن</a>
+                                    <a class="dropdown-item" href="our-service.html">خدماتنا</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="latest-news.html">آخر الأخبار</a>
+                                <span id="dash"></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">زاوية المساهمين</a>
+                                <span id="dash"></span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                                <span id="dash"></span>
+                            </li>
+                            <hr>
+                            <div class="col-md-12 d-flex px-5 justify-content-around align-items-center socialse">
+                                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                                <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="instagram"></a>
+                                <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">الصفحة الرئيسية <span
+                                    class="sr-only">(current)</span></a>
+                            <span id="dash"></span>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                عن الشركة
+                            </a>
+                            <span id="dash"></span>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="about-us.html">من نحن</a>
+                                <a class="dropdown-item" href="our-service.html">خدماتنا</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="latest-news.html">آخر الأخبار</a>
+                            <span id="dash"></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">زاوية المساهمين</a>
+                            <span id="dash"></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                            <span id="dash"></span>
+                        </li>
+                        <li class="nav-item mr-auto">
+                            <form class="search-form-container">
+                                <label for="search" class="styled-btn">
+                                    <span id="dash-rounded"></span>
+                                    <span id="search-span">البحث<img src="svgs/search (1).svg"></span>
+                                    <input id="searchBtn" class="nav-link" type="text" name="search"
+                                        placeholder="البحث">
+                                </label>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+               
+        <div class="container about-con contact-container">
+            <img class="big-logo" src="svgs/Path 158.svg" alt="">
+            <div class="row contact-wrapper mt-5">
+            <div class="col-md-3 menu">
+                                                                            
+                <div id="form-toggler" class="about-btn selected">
+                    <button class="btn-section1"><span class="button-text">الأرقام والعناوين</span></button><span class="white-block"></span>
+                </div>
+                <div class="branches-form animate__animated">
+                    <form>
+                        <label for="branch"><input type="radio" name="branch" value="1" checked><span class="checkmark"></span> المركز الرئيسي</label>
+                        <label for="branch"><input type="radio" name="branch" value="2"><span class="checkmark"></span> فرع حلب</label>
+                        <label for="branch"><input type="radio" name="branch" value="3"><span class="checkmark"></span> فرع حماه</label>
+                    </form>
+                </div>
+                <div class="about-btn animate__animated">
+                    <button class="btn-section2"><span class="button-text">هيئة الرقابة الشرعية</span></button><span
+                        class="white-block"></span>
+                </div>
+                <div class="about-btn animate__animated">
+                    <button class="btn-section3"><span class="button-text">الإدارة التنفيذية</span></button><span class="white-block"></span>
+                </div>
+            </div>
+            <div class="col-md-9 sections">
+                <button class="menu-toggle ">
+                    <span uk-icon="icon: menu"></span>
+                </button>
+                <div class="contact-section1">
+                    
+                    <div class="row">
+                        <img class="col-md-6" src="svgs/home-decor-ideas-sfshowcaselivingroom-03-1585257771.svg" \>
+                        <div class="col-md-6 info">
+                            <div><span>هاتف : </span>1827 1827
+                            </div>
+                            <div><span>فاكس : </span>(+963) (11) (3328546
+                            </div>
+                            <div><span>موبايل : </span>(+963) (992) 077077
+                            </div>
+                            <div><span>البريد الإلكتروني : </span>info@atisyria.com
+                            </div>
+                            <div>دمشق، ساحة النجمة، شارع رشدي الشمعة بناء رقم (4)</div>
+                            
+                        </div>
+                      
+                    </div>
+                </div>
+                <div class="contact-section2" id="accordion">
+                    
+   
+                     
+
+                    <div class="ques-block">
+                        <div class=" ques-title" data-toggle="collapse" href="#ques1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+                            الفرق بين التأمين الإسلامي والتأمين التجاري
+                        </div>
+                    </div>
+                    <div class="collapse multi-collapse answer" data-parent="#accordion" id="ques1" >
+                        <div class="card card-body">
+                            لتأمين التجاري من عقود المعاوضات ولا يخلو من الربا والغرر و غيره من المحظورات في 
+                            الشريعة. حيث لا تتحرج شركات التأمين التجارية أو التقليدية أن تقوم بالتأمين على 
+                            أمور محرمة وأن تستثمر أموالها بأسلوب ربوي.
+                        </div>
+                    </div>
+                    <div class="ques-block">
+                        <div class=" ques-title" data-toggle="collapse" href="#ques2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+                            الفرق بين التأمين الإسلامي والتأمين التجاري من حيث الهدف و الغاية
+                        </div>
+                    </div>
+                    <div class="collapse multi-collapse answer" data-parent="#accordion" id="ques2" >
+                        <div class="card card-body">
+                            التأمين الإسلامي قائم على التعاون و يدخل في مسمى عقود التبرعات و يخلو من الربا وغيره و من المحظورات الشرعية
+
+
+                        </div>
+                    </div>
+                    <div class="ques-block">
+                        <div class=" ques-title" data-toggle="collapse" href="#ques3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+                            الفرق بين التأمين الإسلامي والتأمين التجاري
+                        </div>
+                    </div>
+                    <div class="collapse multi-collapse answer" data-parent="#accordion" id="ques3" >
+                        <div class="card card-body">
+                            الفرق بين التأمين الإسلامي والتأمين التجاري
+                        </div>
+                    </div>
+                    <div class="ques-block">
+                        <div class=" ques-title" data-toggle="collapse" href="#ques4" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+                            الفرق بين التأمين الإسلامي والتأمين التجاري
+                        </div>
+                    </div>
+                    <div class="collapse multi-collapse answer" data-parent="#accordion" id="ques4" >
+                        <div class="card card-body">
+                            الفرق بين التأمين الإسلامي والتأمين التجاري
+                        </div>
+                    </div>
+                    <div class="ques-block">
+                        <div class=" ques-title" data-toggle="collapse" href="#ques5" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+                            الفرق بين التأمين الإسلامي والتأمين التجاري
+                        </div>
+                    </div>
+                    <div class="collapse multi-collapse answer" data-parent="#accordion" id="ques5" >
+                        <div class="card card-body">
+                            الفرق بين التأمين الإسلامي والتأمين التجاري
+                        </div>
+                    </div>
+                    <div class="ques-block">
+                        <div class=" ques-title" data-toggle="collapse" href="#ques6" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" >
+                            الفرق بين التأمين الإسلامي والتأمين التجاري
+                        </div>
+                    </div>
+                    <div class="collapse multi-collapse answer" data-parent="#accordion" id="ques6" >
+                        <div class="card card-body">
+                            الفرق بين التأمين الإسلامي والتأمين التجاري
+                        </div>
+                    </div>
+
+                   
+
+
+                    
+
+                </div>
+                <div class="contact-section3">
+                    <div class="sec3-title">
+                        تواصل معنا
+                    </div>
+                    <div class="sec3-des">
+                           إن كنت ترغب في خلق مسار مهني متميز وتبحث عن الاستفسارات المتعلقة بالحلول التأمينية، يرجى التواصل معنا
+
+                    </div>
+                    <footer class="contact-us-footer">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-11">
+                                                <label for="inputEmail4">الاسم</label>
+                                                <input type="email" class="form-control" id="inputEmail4" required>
+                                                <label for="inputEmail4">الايميل</label>
+                                                <input type="email" class="form-control" id="inputEmail4" required>
+                                                <label for="inputEmail4">الموضوع</label>
+                                                <input type="email" class="form-control" id="inputEmail4" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4">الرسالة</label>
+                                        <textarea class="form-control" aria-label="With textarea" required></textarea>
+                                        <div class="custom-file mt-2">
+                                            <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                            <label class="custom-file-label" for="inputGroupFile01"></label>
+                                        </div>
+                                        <button type="submit" class="styled-btn styled-btn-file mt-2">
+                                            <span id="dash-rounded"></span>
+                                            <span id="icon">></span>
+                                            <span id="text">إرسال</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="sec-footer contact-us-footer">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="sec-logo">
+                    <img src="images/logo nav.png" alt="العقيلة للتأمين">
+                </div>
+            </div>
+            <div class="col-md-7 mt-lg-3 py-2">
+                <p>
+                    شركة العقيلة للتأمين التكافلي هي شركة مساهمة مغفلة سورية تأسست بتاريخ 16/12/2007 و هي
+                    أول شركة تأمين تكافلي تحصل على إذن مباشرة العمل من هيئة الاشراف على التأمين
+                </p>
+            </div>
+            <div class="col-md-3 d-flex px-5 justify-content-around align-items-center socials">
+                <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="instagram"></a>
+                <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+            </div>
+        </div>
+        <hr>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">الصفحة الرئيسية</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about-us.html">عن الشركة</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="latest-news.html">آخر الاخبار</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">زاوية المساهمين</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+            </li>
+        </ul>
+        <div class="container mt-lg-5 py-2 contactIco">
+            <div class="row">
+                <div class="offset-md-2"></div>
+                <div class="col-md-8">
+                    <div class="justify-content-center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="mobile">
+                                    <img src="images/phone.png" alt="">
+                                    <h6>موبايل</h6>
+                                </div>
+                                <h5 style="direction: ltr;">(+963) (992) 077077</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mobile">
+                                    <img src="images/telephone.png" alt="">
+                                    <h6>هاتف</h6>
+                                </div>
+                                <h5>1827 1827</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mobile">
+                                    <img src="images/Union 1.png" alt="">
+                                    <h6>البريد</h6>
+                                </div>
+                                <h5>info@atisyria.com</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offset-md-2"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <h6>© 2020 ALDRTECH, All Rights Reserved</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" uk-icon="arrow-up" class="ico" uk-totop uk-scroll></a>
+    </section> 
+    </main>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".menu-toggle").click(function () {
+                $('.menu').fadeToggle();
+                $('.menu').children("div").removeClass("animate__fadeInRight");
+                $('.menu').children("div").addClass("animate__fadeInRight");
+                
+                
+            });
+            $(".menu").children(".about-btn").click(function () {
+                $('.menu').children(".about-btn").removeClass("selected");
+                $(this).addClass("selected");
+                // if( ! $('.about-btn').has('#form-toggler')){
+                //     $(".branches-form").fadeToggle();
+
+                // }
+
+            });
+
+
+            $(".btn-section1").click(function () {
+                
+                $('.sections').children("div").css("display", "none");
+                $(".contact-section1").css("display", "block");
+                $('.sections').children("div").css("opacity", "0");
+
+                $('.sections').children("div").css("transform", "translateX(100%)");
+                $(".contact-section1").fadeIn(500, function() {
+                    $(this).css('opacity','1');
+                    $(this).css('transform','translateX(0)');
+                });
+                
+                
+
+                $(".branches-form").removeClass("animate__fadeOutRight");
+                $(".branches-form").addClass("animate__fadeInRight");
+                $(".branches-form").show();
+                setTimeout(function(){
+                    $(".branches-form").animate({
+                        height:"170px"
+                    });
+                },0);
+                $(".contact-us-footer").hide();
+
+               
+               
+
+            });
+            
+            $(".btn-section2").click(function () {
+                if (window.matchMedia('(max-width: 768px)').matches) {
+                    $('.menu').fadeOut();
+                }
+                $('.sections').children("div").css("display", "none");
+                $(".contact-section2").css("display", "block");
+                $('.sections').children("div").css("opacity", "0");
+                $('.sections').children("div").css("transform", "translateX(100%)");
+                $(".contact-section2").fadeIn(500, function() {
+                    $(this).css('opacity','1');
+                    $(this).css('transform','translateX(0)');
+                });
+
+                // $(".branches-form").hide();
+                $(".branches-form").removeClass("animate__fadeInRight");
+                $(".branches-form").addClass("animate__fadeOutRight");
+                setTimeout(function(){
+                    $(".branches-form").animate({
+                        height:"0px"
+                    });
+                },500);
+                $(".contact-us-footer").hide();
+
+            });
+            $(".btn-section3").click(function () {
+                if (window.matchMedia('(max-width: 768px)').matches) {
+                    $('.menu').fadeOut();
+                }
+                $('.sections').children("div").css("display", "none");
+                $(".contact-section3").css("display", "block");
+                $('.sections').children("div").css("opacity", "0");
+                $('.sections').children("div").css("transform", "translateX(100%)");
+                $(".contact-section3").fadeIn(500, function() {
+                    $(this).css('opacity','1');
+                    $(this).css('transform','translateX(0)');
+                });
+                $(".branches-form").addClass("animate__fadeOutRight");
+                setTimeout(function(){
+                    $(".branches-form").animate({
+                        height:"0px"
+                    });
+                },500);
+                $(".contact-us-footer").show();
+
+
+            });
+            
+            // $("#form-toggler").click(function () {
+            //     $(".branches-form").fadeToggle();
+
+            // });
+
+           
+            
+            // $(".ques-block").click(function () {
+            //     $(this).addClass("selected-ques");
+
+            // });
+
+        });
+    </script>
+</body>
+
+</html>
