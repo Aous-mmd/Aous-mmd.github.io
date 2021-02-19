@@ -175,6 +175,7 @@ body {
             .menu-container {
                 position: absolute;
                 top: 3rem;
+                display: none;
                 right: 4rem;
                 width: 50px;
                 height: 45px;
@@ -207,14 +208,12 @@ body {
             .story {
                 position: absolute;
                 height: 40%;
-                left: 30vw;
+                left: 20vw;
                 top: 30vh;
                 h1 {
                     font-size: 3rem;
-                    margin-bottom: 2rem;
                 }
                 p {
-                    margin-left: 0.5rem;
                     font-size: 1rem;
                     padding-right: 20rem;
                 }
@@ -223,6 +222,9 @@ body {
                     font-size: 1.6rem;
                     font-weight: 600;
                     font-family: Helvetica;
+                }
+                a {
+                    color: $green;
                 }
             }
             .social-container {
@@ -246,11 +248,12 @@ body {
             position: absolute;
             top: 25vh;
             left: 15vw;
-            height: 50vh;
-            width: 40vw;
-            background-image: url(../images/barbar.jpg);
+            height: 60vh;
+            width: 28vw;
+            background-position-x: center;
+            background-image: url(../images/Aous.jpg);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
         }
         .scroll-btn {
