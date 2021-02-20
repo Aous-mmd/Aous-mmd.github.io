@@ -75,6 +75,9 @@ iframe {
     z-index: 50;
     pointer-events: none;
 }
+.embed-nav .code-types {
+    display: none !important;
+}
 
 html {
     cursor: none;
@@ -145,13 +148,14 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @media (max-width: 768px) {
+                justify-content: flex-end;
+            }
             .main-title {
                 padding: 3rem;
                 font-size: 2rem;
                 @media (max-width: 768px) {
-                    color: $green;
-                    position: relative;
-                    z-index: 450;
+                    display: none;
                 }
             }
             .info {
@@ -160,7 +164,7 @@ body {
                 font-size: 1rem;
                 a {
                     text-decoration: none;
-                    margin-left: 0.8rem;
+                    margin-left: 0.9rem;
                     color: $white;
                 }
                 @media (max-width: 768px) {
@@ -267,7 +271,7 @@ body {
                 }
                 @media (max-width: 768px) {
                     left: 7vw;
-                    top: 55vh;
+                    top: 48vh;
                     h1 {
                         font-size: 1.3rem;
                     }
@@ -312,7 +316,7 @@ body {
                 height: 30vh;
                 width: 55vw;
                 background-size: cover;
-                top: 22vh;
+                top: 10vh;
             }
         }
         .scroll-btn {
@@ -322,222 +326,222 @@ body {
             transform: translate(-50%, -5%);
             z-index: 1;
             @media (max-width: 768px) {
-                left: 70%;
-                bottom: -10%;
-                transform: translate(-70%, -15%);
+                display: none;
             }
-            .mouse {
-                @include bgGradient;
-                position: relative;
-                width: $widthMouse;
-                height: $heightMouse;
-                border-radius: 100px;
-                background-size: 100% 200%;
-                animation: colorSlide $animDuration linear infinite, nudgeMouse $animDuration ease-out infinite;
-                &:before,
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    margin: auto;
-                }
-                &:before {
-                    width: $widthMouse - $borderMouse;
-                    height: $heightMouse - $borderMouse;
-                    background-color: $black;
+            @media (min-width: 769px) {
+                .mouse {
+                    @include bgGradient;
+                    position: relative;
+                    width: $widthMouse;
+                    height: $heightMouse;
                     border-radius: 100px;
+                    background-size: 100% 200%;
+                    animation: colorSlide $animDuration linear infinite, nudgeMouse $animDuration ease-out infinite;
+                    &:before,
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        margin: auto;
+                    }
+                    &:before {
+                        width: $widthMouse - $borderMouse;
+                        height: $heightMouse - $borderMouse;
+                        background-color: $black;
+                        border-radius: 100px;
+                    }
+                    &:after {
+                        background-color: $colorOutline;
+                        width: $sizeTrackball;
+                        height: $sizeTrackball;
+                        border-radius: 100%;
+                        animation: trackBallSlide $animDuration linear infinite;
+                    }
                 }
-                &:after {
-                    background-color: $colorOutline;
-                    width: $sizeTrackball;
-                    height: $sizeTrackball;
-                    border-radius: 100%;
-                    animation: trackBallSlide $animDuration linear infinite;
-                }
-            }
 
-            @keyframes colorSlide {
-                0% {
-                    background-position: 0% 100%;
+                @keyframes colorSlide {
+                    0% {
+                        background-position: 0% 100%;
+                    }
+                    20% {
+                        background-position: 0% 0%;
+                    }
+                    21% {
+                        background-color: $colorOutlineFade;
+                    }
+                    29.99% {
+                        background-color: $colorOutline;
+                        background-position: 0% 0%;
+                    }
+                    30% {
+                        background-color: $colorOutlineFade;
+                        background-position: 0% 100%;
+                    }
+                    50% {
+                        background-position: 0% 0%;
+                    }
+                    51% {
+                        background-color: $colorOutlineFade;
+                    }
+                    59% {
+                        background-color: $colorOutline;
+                        background-position: 0% 0%;
+                    }
+                    60% {
+                        background-color: $colorOutlineFade;
+                        background-position: 0% 100%;
+                    }
+                    80% {
+                        background-position: 0% 0%;
+                    }
+                    81% {
+                        background-color: $colorOutlineFade;
+                    }
+                    90%,
+                    100% {
+                        background-color: $colorOutline;
+                    }
                 }
-                20% {
-                    background-position: 0% 0%;
-                }
-                21% {
-                    background-color: $colorOutlineFade;
-                }
-                29.99% {
-                    background-color: $colorOutline;
-                    background-position: 0% 0%;
-                }
-                30% {
-                    background-color: $colorOutlineFade;
-                    background-position: 0% 100%;
-                }
-                50% {
-                    background-position: 0% 0%;
-                }
-                51% {
-                    background-color: $colorOutlineFade;
-                }
-                59% {
-                    background-color: $colorOutline;
-                    background-position: 0% 0%;
-                }
-                60% {
-                    background-color: $colorOutlineFade;
-                    background-position: 0% 100%;
-                }
-                80% {
-                    background-position: 0% 0%;
-                }
-                81% {
-                    background-color: $colorOutlineFade;
-                }
-                90%,
-                100% {
-                    background-color: $colorOutline;
-                }
-            }
 
-            @keyframes trackBallSlide {
-                0% {
-                    opacity: 1;
-                    transform: scale(1) translateY(-$posTrackball);
+                @keyframes trackBallSlide {
+                    0% {
+                        opacity: 1;
+                        transform: scale(1) translateY(-$posTrackball);
+                    }
+                    6% {
+                        opacity: 1;
+                        transform: scale(0.9) translateY($posTrackball/4);
+                    }
+                    14% {
+                        opacity: 0;
+                        transform: scale($shrinkTrackball) translateY($posTrackball * 2);
+                    }
+                    15%,
+                    19% {
+                        opacity: 0;
+                        transform: scale($shrinkTrackball) translateY(-$posTrackball);
+                    }
+                    28%,
+                    29.99% {
+                        opacity: 1;
+                        transform: scale(1) translateY(-$posTrackball);
+                    }
+                    30% {
+                        opacity: 1;
+                        transform: scale(1) translateY(-$posTrackball);
+                    }
+                    36% {
+                        opacity: 1;
+                        transform: scale(0.9) translateY($posTrackball/4);
+                    }
+                    44% {
+                        opacity: 0;
+                        transform: scale($shrinkTrackball) translateY($posTrackball * 2);
+                    }
+                    45%,
+                    49% {
+                        opacity: 0;
+                        transform: scale($shrinkTrackball) translateY(-$posTrackball);
+                    }
+                    58%,
+                    59.99% {
+                        opacity: 1;
+                        transform: scale(1) translateY(-$posTrackball);
+                    }
+                    60% {
+                        opacity: 1;
+                        transform: scale(1) translateY(-$posTrackball);
+                    }
+                    66% {
+                        opacity: 1;
+                        transform: scale(0.9) translateY($posTrackball/4);
+                    }
+                    74% {
+                        opacity: 0;
+                        transform: scale($shrinkTrackball) translateY($posTrackball * 2);
+                    }
+                    75%,
+                    79% {
+                        opacity: 0;
+                        transform: scale($shrinkTrackball) translateY(-$posTrackball);
+                    }
+                    88%,
+                    100% {
+                        opacity: 1;
+                        transform: scale(1) translateY(-$posTrackball);
+                    }
                 }
-                6% {
-                    opacity: 1;
-                    transform: scale(0.9) translateY($posTrackball/4);
-                }
-                14% {
-                    opacity: 0;
-                    transform: scale($shrinkTrackball) translateY($posTrackball * 2);
-                }
-                15%,
-                19% {
-                    opacity: 0;
-                    transform: scale($shrinkTrackball) translateY(-$posTrackball);
-                }
-                28%,
-                29.99% {
-                    opacity: 1;
-                    transform: scale(1) translateY(-$posTrackball);
-                }
-                30% {
-                    opacity: 1;
-                    transform: scale(1) translateY(-$posTrackball);
-                }
-                36% {
-                    opacity: 1;
-                    transform: scale(0.9) translateY($posTrackball/4);
-                }
-                44% {
-                    opacity: 0;
-                    transform: scale($shrinkTrackball) translateY($posTrackball * 2);
-                }
-                45%,
-                49% {
-                    opacity: 0;
-                    transform: scale($shrinkTrackball) translateY(-$posTrackball);
-                }
-                58%,
-                59.99% {
-                    opacity: 1;
-                    transform: scale(1) translateY(-$posTrackball);
-                }
-                60% {
-                    opacity: 1;
-                    transform: scale(1) translateY(-$posTrackball);
-                }
-                66% {
-                    opacity: 1;
-                    transform: scale(0.9) translateY($posTrackball/4);
-                }
-                74% {
-                    opacity: 0;
-                    transform: scale($shrinkTrackball) translateY($posTrackball * 2);
-                }
-                75%,
-                79% {
-                    opacity: 0;
-                    transform: scale($shrinkTrackball) translateY(-$posTrackball);
-                }
-                88%,
-                100% {
-                    opacity: 1;
-                    transform: scale(1) translateY(-$posTrackball);
-                }
-            }
 
-            @keyframes nudgeMouse {
-                0% {
-                    transform: translateY(0);
+                @keyframes nudgeMouse {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    20% {
+                        transform: translateY($posMouse);
+                    }
+                    30% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY($posMouse);
+                    }
+                    60% {
+                        transform: translateY(0);
+                    }
+                    80% {
+                        transform: translateY($posMouse);
+                    }
+                    90% {
+                        transform: translateY(0);
+                    }
                 }
-                20% {
-                    transform: translateY($posMouse);
-                }
-                30% {
-                    transform: translateY(0);
-                }
-                50% {
-                    transform: translateY($posMouse);
-                }
-                60% {
-                    transform: translateY(0);
-                }
-                80% {
-                    transform: translateY($posMouse);
-                }
-                90% {
-                    transform: translateY(0);
-                }
-            }
 
-            @keyframes nudgeText {
-                0% {
-                    transform: translateY(0);
+                @keyframes nudgeText {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    20% {
+                        transform: translateY($posText);
+                    }
+                    30% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY($posText);
+                    }
+                    60% {
+                        transform: translateY(0);
+                    }
+                    80% {
+                        transform: translateY($posText);
+                    }
+                    90% {
+                        transform: translateY(0);
+                    }
                 }
-                20% {
-                    transform: translateY($posText);
-                }
-                30% {
-                    transform: translateY(0);
-                }
-                50% {
-                    transform: translateY($posText);
-                }
-                60% {
-                    transform: translateY(0);
-                }
-                80% {
-                    transform: translateY($posText);
-                }
-                90% {
-                    transform: translateY(0);
-                }
-            }
 
-            @keyframes colorText {
-                21% {
-                    color: $colorOutlineFade;
-                }
-                30% {
-                    color: $colorOutline;
-                }
-                51% {
-                    color: $colorOutlineFade;
-                }
-                60% {
-                    color: $colorOutline;
-                }
-                81% {
-                    color: $colorOutlineFade;
-                }
-                90% {
-                    color: $colorOutline;
+                @keyframes colorText {
+                    21% {
+                        color: $colorOutlineFade;
+                    }
+                    30% {
+                        color: $colorOutline;
+                    }
+                    51% {
+                        color: $colorOutlineFade;
+                    }
+                    60% {
+                        color: $colorOutline;
+                    }
+                    81% {
+                        color: $colorOutlineFade;
+                    }
+                    90% {
+                        color: $colorOutline;
+                    }
                 }
             }
         }
