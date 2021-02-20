@@ -77,6 +77,7 @@ iframe {
 
 html {
     cursor: none;
+    overflow-x: hidden;
 }
 
 .circle {
@@ -94,6 +95,9 @@ html {
     border: 1px solid $green;
     &.active {
         border: 0;
+    }
+    @media (max-width: 1000px) {
+        display: none;
     }
 }
 .circle svg {
@@ -133,15 +137,32 @@ body {
             .main-title {
                 padding: 3rem;
                 font-size: 2rem;
+                @media (max-width: 768px) {
+                    color: $green;
+                    position: relative;
+                    z-index: 450;
+                }
             }
             .info {
                 display: flex;
                 padding: 3rem;
                 font-size: 1rem;
+
                 a {
                     text-decoration: none;
                     margin-left: 1rem;
                     color: $white;
+                }
+                @media (max-width: 768px) {
+                    padding: 2rem;
+                    a {
+                        color: $black;
+                        position: relative;
+                        z-index: 15;
+                    }
+                    a:first-child {
+                        color: $white;
+                    }
                 }
             }
         }
@@ -155,12 +176,14 @@ body {
                 width: 0%;
                 height: 100vh;
                 background: $green;
-                animation-name: go-left;
-                animation-duration: 4s;
-                animation-fill-mode: forwards;
-                animation-direction: alternate;
-                animation-timing-function: cubic-bezier(0.74, 0.06, 0.4, 0.92);
-                animation-delay: 7s;
+                @media (min-width: 1000px) {
+                    animation-name: go-left;
+                    animation-duration: 4s;
+                    animation-fill-mode: forwards;
+                    animation-direction: alternate;
+                    animation-timing-function: cubic-bezier(0.74, 0.06, 0.4, 0.92);
+                    animation-delay: 7s;
+                }
                 left: 0;
                 z-index: 16;
             }
@@ -232,11 +255,25 @@ body {
                 a {
                     color: $green;
                 }
+                @media (max-width: 768px) {
+                    left: 7vw;
+                    top: 55vh;
+                    h1 {
+                        font-size: 1.3rem;
+                    }
+                    p {
+                        font-size: 0.8rem;
+                        padding-right: 0;
+                    }
+                }
             }
             .social-container {
                 position: absolute;
                 bottom: 2rem;
                 right: 2rem;
+                @media (max-width: 768px) {
+                    display: none;
+                }
                 .social {
                     display: flex;
                     ul {
@@ -261,6 +298,11 @@ body {
             background-repeat: no-repeat;
             background-size: contain;
             box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+            @media (max-width: 768px) {
+                height: 25vh;
+                width: 55vw;
+                background-size: cover;
+            }
         }
         .scroll-btn {
             position: absolute;
@@ -268,6 +310,10 @@ body {
             left: 50%;
             transform: translate(-50%, -5%);
             z-index: 1;
+            @media (max-width: 768px) {
+                left: 70%;
+                transform: translate(-70%, -5%);
+            }
             .mouse {
                 @include bgGradient;
                 position: relative;
@@ -536,6 +582,46 @@ body {
             z-index: 5;
             width: 100%;
             margin: 3% 0;
+            .uk-slider-items {
+                @media (max-width: 768px) {
+                    img {
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                    li {
+                        &:first-child {
+                            img {
+                                object-position: cover;
+                            }
+                        }
+                        &:nth-child(2) {
+                            img {
+                                object-position: left;
+                            }
+                        }
+                        &:nth-child(3) {
+                            img {
+                                object-position: right;
+                            }
+                        }
+                        &:nth-child(4) {
+                            img {
+                                object-position: left;
+                            }
+                        }
+                        &:nth-child(5) {
+                            img {
+                                object-position: left;
+                            }
+                        }
+                        &:nth-child(7) {
+                            img {
+                                object-position: right;
+                            }
+                        }
+                    }
+                }
+            }
             li {
                 .btn-project {
                     transition: all 0.5s ease-in-out;
@@ -770,7 +856,7 @@ body {
             .timeline ul li:nth-child(even) div::before {
                 left: -15px;
                 border-width: 8px 16px 8px 0;
-                border-color: transparent #f45b69 transparent transparent;
+                border-color: transparent $green transparent transparent;
             }
         }
     }
@@ -818,10 +904,10 @@ body {
         height: 100vh;
         position: fixed;
         z-index: 1000;
-        .bars-and-stuff{
+        .bars-and-stuff {
             top: 0;
             position: absolute;
-            left:66.6%;
+            left: 66.6%;
         }
         p {
             font-family: monospace;
@@ -856,6 +942,11 @@ body {
             animation-iteration-count: infinite;
             animation-direction: alternate;
             animation-timing-function: linear;
+            @media (max-width: 1000px) {
+                margin-left: 0;
+                top: 60%;
+                left: 20%;
+            }
         }
         @keyframes blink {
             0% {

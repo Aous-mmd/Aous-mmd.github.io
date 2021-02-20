@@ -63,6 +63,7 @@ iframe {
 
 html {
   cursor: none;
+  overflow-x: hidden;
 }
 
 .circle {
@@ -83,6 +84,12 @@ html {
 
 .circle.active {
   border: 0;
+}
+
+@media (max-width: 1000px) {
+  .circle {
+    display: none;
+  }
 }
 
 .circle svg {
@@ -138,6 +145,14 @@ body .containers .left-container .main-title {
   font-size: 2rem;
 }
 
+@media (max-width: 768px) {
+  body .containers .left-container .main-title {
+    color: #9acc14;
+    position: relative;
+    z-index: 450;
+  }
+}
+
 body .containers .left-container .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +167,20 @@ body .containers .left-container .info a {
   color: #eeeeee;
 }
 
+@media (max-width: 768px) {
+  body .containers .left-container .info {
+    padding: 2rem;
+  }
+  body .containers .left-container .info a {
+    color: #1e2125;
+    position: relative;
+    z-index: 15;
+  }
+  body .containers .left-container .info a:first-child {
+    color: #eeeeee;
+  }
+}
+
 body .containers .right-container {
   position: relative;
   background-color: #eeeeee;
@@ -164,20 +193,25 @@ body .containers .right-container .first-block {
   width: 0%;
   height: 100vh;
   background: #9acc14;
-  -webkit-animation-name: go-left;
-          animation-name: go-left;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-timing-function: cubic-bezier(0.74, 0.06, 0.4, 0.92);
-          animation-timing-function: cubic-bezier(0.74, 0.06, 0.4, 0.92);
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
   left: 0;
   z-index: 16;
+}
+
+@media (min-width: 1000px) {
+  body .containers .right-container .first-block {
+    -webkit-animation-name: go-left;
+            animation-name: go-left;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(0.74, 0.06, 0.4, 0.92);
+            animation-timing-function: cubic-bezier(0.74, 0.06, 0.4, 0.92);
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s;
+  }
 }
 
 @-webkit-keyframes go-left {
@@ -276,10 +310,30 @@ body .containers .right-container .story a {
   color: #9acc14;
 }
 
+@media (max-width: 768px) {
+  body .containers .right-container .story {
+    left: 7vw;
+    top: 55vh;
+  }
+  body .containers .right-container .story h1 {
+    font-size: 1.3rem;
+  }
+  body .containers .right-container .story p {
+    font-size: 0.8rem;
+    padding-right: 0;
+  }
+}
+
 body .containers .right-container .social-container {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
+}
+
+@media (max-width: 768px) {
+  body .containers .right-container .social-container {
+    display: none;
+  }
 }
 
 body .containers .right-container .social-container .social {
@@ -312,6 +366,14 @@ body .containers .center-container {
           box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 768px) {
+  body .containers .center-container {
+    height: 25vh;
+    width: 55vw;
+    background-size: cover;
+  }
+}
+
 body .containers .scroll-btn {
   position: absolute;
   bottom: 5%;
@@ -319,6 +381,14 @@ body .containers .scroll-btn {
   -webkit-transform: translate(-50%, -5%);
           transform: translate(-50%, -5%);
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  body .containers .scroll-btn {
+    left: 70%;
+    -webkit-transform: translate(-70%, -5%);
+            transform: translate(-70%, -5%);
+  }
 }
 
 body .containers .scroll-btn .mouse {
@@ -852,6 +922,38 @@ body #skills .project_slider {
   margin: 3% 0;
 }
 
+@media (max-width: 768px) {
+  body #skills .project_slider .uk-slider-items img {
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body #skills .project_slider .uk-slider-items li:first-child img {
+    -o-object-position: cover;
+       object-position: cover;
+  }
+  body #skills .project_slider .uk-slider-items li:nth-child(2) img {
+    -o-object-position: left;
+       object-position: left;
+  }
+  body #skills .project_slider .uk-slider-items li:nth-child(3) img {
+    -o-object-position: right;
+       object-position: right;
+  }
+  body #skills .project_slider .uk-slider-items li:nth-child(4) img {
+    -o-object-position: left;
+       object-position: left;
+  }
+  body #skills .project_slider .uk-slider-items li:nth-child(5) img {
+    -o-object-position: left;
+       object-position: left;
+  }
+  body #skills .project_slider .uk-slider-items li:nth-child(7) img {
+    -o-object-position: right;
+       object-position: right;
+  }
+}
+
 body #skills .project_slider li .btn-project {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -1085,7 +1187,7 @@ body #skills .timeline ul li.in-view div {
   body #skills .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    border-color: transparent #9acc14 transparent transparent;
   }
 }
 
@@ -1192,6 +1294,14 @@ body .preloader .msg {
           animation-direction: alternate;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+}
+
+@media (max-width: 1000px) {
+  body .preloader .msg {
+    margin-left: 0;
+    top: 60%;
+    left: 20%;
+  }
 }
 
 @-webkit-keyframes blink {
