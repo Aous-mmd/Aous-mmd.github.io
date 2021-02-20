@@ -377,9 +377,10 @@ body .containers .center-container {
 
 @media (max-width: 768px) {
   body .containers .center-container {
-    height: 25vh;
+    height: 30vh;
     width: 55vw;
     background-size: cover;
+    top: 22vh;
   }
 }
 
@@ -1308,8 +1309,10 @@ body .preloader .msg {
 @media (max-width: 1000px) {
   body .preloader .msg {
     margin-left: 0;
-    top: 60%;
-    left: 20%;
+    top: 85%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
