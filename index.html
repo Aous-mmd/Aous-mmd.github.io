@@ -536,6 +536,10 @@
             //     $('.carousel-item:first-child').addClass("active");
         }
         $(document).ready(function () {
+            $('.scrollTo').click(function () {
+                $('.visible').removeClass("visible");
+                $('#projects').addClass("visible");
+            });
             setTimeout(function () {
                 clearInterval(intervalID);
                 $('.msg').html("Success");
@@ -547,11 +551,6 @@
                 }, 500);
             }, 6000);
             setTimeout(function () {
-                $('.scrollTo').click(function () {
-                    $('.visible').removeClass("visible");
-                    $('#projects').addClass("visible");
-                });
-
                 if (window.matchMedia("(min-width: 1000px)").matches) {
                     AOS.init();
                     TweenMax.from(".left-container", 2, {
