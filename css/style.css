@@ -120,6 +120,12 @@ body .btn-cv {
   border: 1px solid #9acc14;
 }
 
+@media (max-wdith: 768px) {
+  body .btn-cv {
+    width: 80%;
+  }
+}
+
 body hr {
   color: #9acc14;
 }
@@ -173,7 +179,7 @@ body .containers .left-container .info {
 
 body .containers .left-container .info a {
   text-decoration: none;
-  margin-left: 1rem;
+  margin-left: 0.8rem;
   color: #eeeeee;
 }
 
@@ -397,6 +403,7 @@ body .containers .scroll-btn {
 @media (max-width: 768px) {
   body .containers .scroll-btn {
     left: 70%;
+    bottom: -10%;
     -webkit-transform: translate(-70%, -15%);
             transform: translate(-70%, -15%);
   }

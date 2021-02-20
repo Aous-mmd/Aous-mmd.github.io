@@ -125,6 +125,9 @@ body {
     .btn-cv {
         background: transparent;
         border: 1px solid $green;
+        @media (max-wdith: 768px) {
+            width: 80%;
+        }
     }
     hr {
         color: $green;
@@ -155,10 +158,9 @@ body {
                 display: flex;
                 padding: 3rem;
                 font-size: 1rem;
-
                 a {
                     text-decoration: none;
-                    margin-left: 1rem;
+                    margin-left: 0.8rem;
                     color: $white;
                 }
                 @media (max-width: 768px) {
@@ -321,6 +323,7 @@ body {
             z-index: 1;
             @media (max-width: 768px) {
                 left: 70%;
+                bottom: -10%;
                 transform: translate(-70%, -15%);
             }
             .mouse {
