@@ -9,8 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Aous Mohammad, Frontend developer portfolio">
     <title>Aous Mohammad</title>
-    <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -55,7 +53,8 @@
                 <div class="story">
                     <h1>Aous Mohammad</h1>
                     <p>I'm a Frontend developer</p>
-                    <a class="scrollTo" href="#projects">See My projects</a>
+                    <a class="scrollTo" href="#projects">See My projects</a><hr>
+                    <a class="btn btn-block btn-cv" href="/files/AousMohammadCV.pdf">Download my CV as PDF</a>
                 </div>
                 <div class="social-container">
                     <li class="social">
@@ -478,33 +477,39 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.ripples-min.js"></script>
     <script type="text/javascript">
-
         var intervalID = window.setInterval(updateScreen, 200);
         var c = document.getElementById("console");
         var txt = [
-            "<html>Calling: Github. For://Aous-mmd",
-            "TRYPASS: ********* AUTH CODE: ALPHA GAMMA: 1___ PRIORITY 1",
-            "RETRY: REINDEER Items",
-            "Cpanel:> /publichtml/index.html 1",
-            "================================================",
-            "Priority 1 // local / scanning...",
-            "scanning files...",
-            "CSS FOUND (css/*.css)",
-            "JS FOUND (js/*.js)",
-            "images FOUND (images/*.jpg,*.png)",
-            "...",
-            "...",
-            "Loadfiles -r -z",
-            "...locating files...",
-            "...files found...",
-            "root/> show files",
-            "View: __ index.html",
-            "js: __ JQuery,js,gsap,particles",
-            "css: __ Bootstrap,uikit",
-            "images: __ png,jpg,svg",
-            "fonts: __ ttf,woff",
-            "process: __ successful",
-        ]
+            "<html>",
+            "<head>",
+            "<meta charset='UTF-8'>",
+            "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+            "<title>Aous Mohammad</title>",
+            "<link rel='stylesheet' href='css/bootstrap.min.css'>",
+            "<link rel='stylesheet' href='css/style.css'>",
+            "</head>",
+            "<body>",
+            "<h1>Name: Aous Mohammad</h1>",
+            "<h1>Age: 24</h1>",
+            "<h1>Job title: Frontend developer</h1>",
+            "<h1>Nationality: Syrian</h1>",
+            "<h1>Studying at faculty of information technology engineering, Damascus univerity",
+            "<h1>SKILLS:</h1>",
+            "<p>HTML,HTML5,Canvas</p>",
+            "<p>CSS,CSS3,Bootstrap,Uikit</p>",
+            "<p>Javascript,jQuery</p>",
+            "<p>PugJS,GulpJS,Webpack</p>",
+            "<p>ReactJS,PreactJS,Gatsby,Material-ui,NextJS</p>",
+            "<p>VueJS,NuxtJS,Vuetify</p>",
+            "script src=jquery.js",
+            "script src=popper.js",
+            "script src=bootstrap.js",
+            "script src=uikit.js",
+            "script src=uikit-icons.js",
+            "script src=gsap.js",
+            "script src=particles.js",
+            "script src=aos.js",
+        ];
         var docfrag = document.createDocumentFragment();
         function updateScreen() {
             //Shuffle the "txt" array
