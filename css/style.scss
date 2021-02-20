@@ -83,7 +83,21 @@ html {
     cursor: none;
     overflow-x: hidden;
 }
-
+.qr {
+    width: 20%;
+    position: absolute;
+    top: 87%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.Tqr {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
 .circle {
     width: 30px;
     height: 30px;
