@@ -1146,6 +1146,12 @@ body .preloader {
   z-index: 1000;
 }
 
+body .preloader .bars-and-stuff {
+  top: 0;
+  position: absolute;
+  left: 66.6%;
+}
+
 body .preloader p {
   font-family: monospace;
   font-weight: bold;

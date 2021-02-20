@@ -197,7 +197,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 mb-5 text-center">
-                    <a href="https://codepen.io/AousMmd" class="text-decoration-underline">
+                    <a href="https://codepen.io/AousMmd" target="_blank" class="text-decoration-underline">
                         <h2 class="mt-5 mb-5">Visit my codepen</h2>
                     </a>
                     <div class="lab_slider">
@@ -478,6 +478,7 @@
     <script src="js/aos.js"></script>
     <script src="js/jquery.ripples-min.js"></script>
     <script type="text/javascript">
+
         var intervalID = window.setInterval(updateScreen, 200);
         var c = document.getElementById("console");
         var txt = [
@@ -526,12 +527,12 @@
             setTimeout(function () {
                 clearInterval(intervalID);
                 $('.msg').html("Success");
-                $('.msg').css("background","#9acc14");
-                $('.msg').css("color","#1e2125");
-                $('.msg').css("animationName","done");
+                $('.msg').css("background", "#9acc14");
+                $('.msg').css("color", "#1e2125");
+                $('.msg').css("animationName", "done");
                 setTimeout(function () {
                     $('.preloader').slideUp();
-                },500);
+                }, 500);
             }, 6000);
             AOS.init();
             setTimeout(function () {
