@@ -73,6 +73,7 @@ svg:hover {
 iframe {
     position: relative;
     z-index: 50;
+    pointer-events: none;
 }
 
 html {
@@ -320,7 +321,7 @@ body {
             z-index: 1;
             @media (max-width: 768px) {
                 left: 70%;
-                transform: translate(-70%, -5%);
+                transform: translate(-70%, -15%);
             }
             .mouse {
                 @include bgGradient;

@@ -59,6 +59,7 @@ svg:hover polyline {
 iframe {
   position: relative;
   z-index: 50;
+  pointer-events: none;
 }
 
 html {
@@ -396,8 +397,8 @@ body .containers .scroll-btn {
 @media (max-width: 768px) {
   body .containers .scroll-btn {
     left: 70%;
-    -webkit-transform: translate(-70%, -5%);
-            transform: translate(-70%, -5%);
+    -webkit-transform: translate(-70%, -15%);
+            transform: translate(-70%, -15%);
   }
 }
 
