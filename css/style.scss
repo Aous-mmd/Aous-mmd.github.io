@@ -83,9 +83,9 @@ html {
     width: 30px;
     height: 30px;
     position: fixed;
-    top: -18px;
-    left: -2px;
-    transform: translateX(-2px) translateY(-18px);
+    top: -20px;
+    left: -20px;
+    transform: translateX(-20px) translateY(-20px);
     pointer-events: none;
     z-index: 9999;
     -webkit-transition: opacity 0.6s ease-in-out;
@@ -155,8 +155,14 @@ body {
                 width: 0%;
                 height: 100vh;
                 background: $green;
-                animation: go-left 4s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                animation-name: go-left;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+                animation-direction: alternate;
+                animation-timing-function: cubic-bezier(0.74, 0.06, 0.4, 0.92);
+                animation-delay: 7s;
                 left: 0;
+                z-index: 16;
             }
             @keyframes go-left {
                 0% {
@@ -788,7 +794,7 @@ body {
         .custom-shape-divider-top-1613751319 .shape-fill {
             fill: #1e2125;
         }
-        .content {            
+        .content {
             text-align: center;
             padding-bottom: 2%;
         }
@@ -803,6 +809,63 @@ body {
                 svg {
                     color: $black;
                 }
+            }
+        }
+    }
+    .preloader {
+        background: $black;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        p {
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 2.1vh;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            color: $green;
+        }
+        .msg {
+            font-family: monospace;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 5vh;
+            padding-top: 5vh;
+            background: $black;
+            box-shadow: 0 0 30px $green;
+            text-shadow: 0 0 20px $green;
+            color: $green;
+            width: 20vw;
+            height: 15vh;
+            position: absolute;
+            left: 50%;
+            margin-left: -10vw;
+            top: 50%;
+            margin-top: -5vh;
+            text-align: center;
+            min-width: 200px;
+            animation-name: blink;
+            animation-duration: 0.6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes done {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
             }
         }
     }
