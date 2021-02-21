@@ -69,12 +69,6 @@ html {
   position: absolute;
 }
 
-@media (min-width: 1400px) {
-  .qr {
-    width: 40%;
-  }
-}
-
 @media (max-width: 768px) {
   .qr {
     display: none;

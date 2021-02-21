@@ -85,9 +85,6 @@ html {
 .qr {
     width: 20%;
     position: absolute;
-    @media (min-width: 1400px) {
-        width: 40%;
-    }
     @media (max-width: 768px) {
         display: none;
     }
