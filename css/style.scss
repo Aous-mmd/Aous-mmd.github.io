@@ -6,7 +6,10 @@ $bright_red: #ed6663;
 $bright_orange: #ffa372;
 $colorOutline: #ffffff;
 $colorOutlineFade: #4e5559;
-$green: #9acc14;
+$green: #90af3e;
+$red: #9a1515;
+$milk: #f1f1f1;
+$dgreen: #90af3e;
 $widthMouse: 26px;
 $heightMouse: 44px;
 $borderMouse: 3px;
@@ -22,7 +25,7 @@ $animDuration: 7s;
         linear-gradient(transparent 0%, transparent 50%, $colorOutline 50%, $colorOutline 100%);
 }
 * {
-    font-family: Ubuntu Mono, monospace;
+    font-family: cursive;
 }
 .uk-h1,
 .uk-h2,
@@ -46,10 +49,8 @@ h6 {
 
 a {
     text-decoration: none;
-    cursor: none !important;
     &:hover {
         text-decoration: none;
-        cursor: none !important;
         text-shadow: 3px 3px 10px $green;
         img {
             border: 1px solid $green;
@@ -64,7 +65,6 @@ a {
     }
 }
 svg:hover {
-    cursor: none;
     polyline {
         stroke: $green !important;
     }
@@ -80,15 +80,14 @@ iframe {
 }
 
 html {
-    cursor: none;
     overflow-x: hidden;
 }
 .qr {
     width: 20%;
     position: absolute;
-    top: 87%;
-    left: 65%;
-    transform: translate(-50%, -50%);
+    @media (min-width: 1400px) {
+        width: 40%;
+    }
     @media (max-width: 768px) {
         display: none;
     }
@@ -97,43 +96,6 @@ html {
     @media (max-width: 768px) {
         display: none;
     }
-}
-.circle {
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    top: -20px;
-    left: -20px;
-    transform: translateX(-20px) translateY(-20px);
-    pointer-events: none;
-    z-index: 9999;
-    -webkit-transition: opacity 0.6s ease-in-out;
-    transition: opacity 0.6s ease-in-out;
-    border-radius: 50%;
-    border: 1px solid $green;
-    &.active {
-        border: 0;
-    }
-    @media (max-width: 1000px) {
-        display: none;
-    }
-}
-.circle svg {
-    width: 100%;
-    position: fixed;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -webkit-transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
-    transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.circle svg path {
-    width: 20px;
-    height: 20px;
-    fill: $green;
-    -webkit-transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
-    transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 body {
@@ -203,7 +165,7 @@ body {
                 position: absolute;
                 width: 0%;
                 height: 100vh;
-                background: $green;
+                background: $black;
                 @media (min-width: 1000px) {
                     animation-name: go-left;
                     animation-duration: 4s;
@@ -269,16 +231,16 @@ body {
                 top: 30vh;
                 h1 {
                     font-size: 3rem;
+                    font-weight: bold;
                 }
                 p {
-                    font-size: 1rem;
-                    padding-right: 20rem;
+                    font-size: 1.3rem;
+                    padding-right: 10rem;
                 }
                 p:nth-child(3) {
                     margin-top: 5rem;
                     font-size: 1.6rem;
                     font-weight: 600;
-                    font-family: Helvetica;
                 }
                 a {
                     color: $green;
@@ -324,11 +286,14 @@ body {
             background-position-x: center;
             background-image: url(../images/Aous.jpg);
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+            @media (max-width: 1024px) {
+                height: 35vh;
+            }
             @media (max-width: 768px) {
                 height: 30vh;
-                width: 55vw;
+                width: 45vw;
                 background-size: cover;
                 top: 10vh;
             }
@@ -768,7 +733,7 @@ body {
         }
 
         * {
-            color: $green;
+            color: $milk;
         }
         .timeline ul {
             padding: 50px 0;
@@ -779,7 +744,7 @@ body {
             width: 6px;
             margin: 0 auto;
             padding-top: 50px;
-            background: $green;
+            background: $dgreen;
         }
         .timeline ul li::after {
             content: "";
@@ -811,17 +776,17 @@ body {
             left: 45px;
         }
         .timeline ul li:nth-child(odd) div::before {
-            left: -15px;
+            left: -16px;
             border-width: 8px 16px 8px 0;
-            border-color: transparent $green transparent transparent;
+            border-color: transparent $dgreen transparent transparent;
         }
         .timeline ul li:nth-child(even) div {
             left: -439px;
         }
         .timeline ul li:nth-child(even) div::before {
-            right: -15px;
+            right: -16px;
             border-width: 8px 0 8px 16px;
-            border-color: transparent transparent transparent $green;
+            border-color: transparent transparent transparent $dgreen;
         }
         time {
             display: block;
@@ -838,7 +803,7 @@ body {
         }
 
         .timeline ul li.in-view::after {
-            background: $green;
+            background: $dgreen;
         }
 
         .timeline ul li div {
@@ -850,7 +815,6 @@ body {
         .timeline ul li:nth-child(odd) div {
             transform: translate3d(200px, 0, 0);
         }
-
         .timeline ul li:nth-child(even) div {
             transform: translate3d(-200px, 0, 0);
         }
@@ -886,7 +850,7 @@ body {
             .timeline ul li:nth-child(even) div::before {
                 left: -15px;
                 border-width: 8px 16px 8px 0;
-                border-color: transparent $green transparent transparent;
+                border-color: transparent $dgreen transparent transparent;
             }
         }
     }
@@ -955,16 +919,14 @@ body {
             font-size: 5vh;
             padding-top: 5vh;
             background: $black;
-            box-shadow: 0 0 30px $green;
             text-shadow: 0 0 20px $green;
             color: $green;
             width: 20vw;
             height: 15vh;
             position: absolute;
             left: 50%;
-            margin-left: -10vw;
-            top: 50%;
-            margin-top: -5vh;
+            bottom: 10%;
+            transform: translate(-50%, -10%);
             text-align: center;
             min-width: 200px;
             animation-name: blink;

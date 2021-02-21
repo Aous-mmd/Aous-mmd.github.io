@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  font-family: Ubuntu Mono, monospace;
+  font-family: cursive;
 }
 
 .uk-h1,
@@ -25,35 +25,29 @@ h6 {
 
 a {
   text-decoration: none;
-  cursor: none !important;
 }
 
 a:hover {
   text-decoration: none;
-  cursor: none !important;
-  text-shadow: 3px 3px 10px #9acc14;
+  text-shadow: 3px 3px 10px #90af3e;
 }
 
 a:hover img {
-  border: 1px solid #9acc14;
+  border: 1px solid #90af3e;
 }
 
 a:hover polyline {
-  stroke: #9acc14;
+  stroke: #90af3e;
 }
 
 a.btn:hover {
-  -webkit-box-shadow: 0px 0px 3px 3px #9acc14;
-          box-shadow: 0px 0px 3px 3px #9acc14;
+  -webkit-box-shadow: 0px 0px 3px 3px #90af3e;
+          box-shadow: 0px 0px 3px 3px #90af3e;
   text-shadow: 0;
 }
 
-svg:hover {
-  cursor: none;
-}
-
 svg:hover polyline {
-  stroke: #9acc14 !important;
+  stroke: #90af3e !important;
 }
 
 iframe {
@@ -67,17 +61,18 @@ iframe {
 }
 
 html {
-  cursor: none;
   overflow-x: hidden;
 }
 
 .qr {
   width: 20%;
   position: absolute;
-  top: 87%;
-  left: 65%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1400px) {
+  .qr {
+    width: 40%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -92,49 +87,6 @@ html {
   }
 }
 
-.circle {
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  top: -20px;
-  left: -20px;
-  -webkit-transform: translateX(-20px) translateY(-20px);
-          transform: translateX(-20px) translateY(-20px);
-  pointer-events: none;
-  z-index: 9999;
-  -webkit-transition: opacity 0.6s ease-in-out;
-  transition: opacity 0.6s ease-in-out;
-  border-radius: 50%;
-  border: 1px solid #9acc14;
-}
-
-.circle.active {
-  border: 0;
-}
-
-@media (max-width: 1000px) {
-  .circle {
-    display: none;
-  }
-}
-
-.circle svg {
-  width: 100%;
-  position: fixed;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  -webkit-transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
-  transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.circle svg path {
-  width: 20px;
-  height: 20px;
-  fill: #9acc14;
-  -webkit-transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
-  transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
-}
-
 body {
   background: #eeeeee;
   overflow-x: hidden;
@@ -142,7 +94,7 @@ body {
 
 body .btn-cv {
   background: transparent;
-  border: 1px solid #9acc14;
+  border: 1px solid #90af3e;
 }
 
 @media (max-wdith: 768px) {
@@ -152,7 +104,7 @@ body .btn-cv {
 }
 
 body hr {
-  color: #9acc14;
+  color: #90af3e;
 }
 
 body .containers {
@@ -239,7 +191,7 @@ body .containers .right-container .first-block {
   position: absolute;
   width: 0%;
   height: 100vh;
-  background: #9acc14;
+  background: #1e2125;
   left: 0;
   z-index: 16;
 }
@@ -339,22 +291,22 @@ body .containers .right-container .story {
 
 body .containers .right-container .story h1 {
   font-size: 3rem;
+  font-weight: bold;
 }
 
 body .containers .right-container .story p {
-  font-size: 1rem;
-  padding-right: 20rem;
+  font-size: 1.3rem;
+  padding-right: 10rem;
 }
 
 body .containers .right-container .story p:nth-child(3) {
   margin-top: 5rem;
   font-size: 1.6rem;
   font-weight: 600;
-  font-family: Helvetica;
 }
 
 body .containers .right-container .story a {
-  color: #9acc14;
+  color: #90af3e;
 }
 
 @media (max-width: 768px) {
@@ -408,15 +360,21 @@ body .containers .center-container {
   background-position-x: center;
   background-image: url(../images/Aous.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   -webkit-box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 7px 29px 49px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1024px) {
+  body .containers .center-container {
+    height: 35vh;
+  }
 }
 
 @media (max-width: 768px) {
   body .containers .center-container {
     height: 30vh;
-    width: 55vw;
+    width: 45vw;
     background-size: cover;
     top: 10vh;
   }
@@ -1093,7 +1051,7 @@ body #skills .uk-dotnav {
 }
 
 body #skills * {
-  color: #9acc14;
+  color: #f1f1f1;
 }
 
 body #skills .timeline ul {
@@ -1106,7 +1064,7 @@ body #skills .timeline ul li {
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: #9acc14;
+  background: #90af3e;
 }
 
 body #skills .timeline ul li::after {
@@ -1144,9 +1102,9 @@ body #skills .timeline ul li:nth-child(odd) div {
 }
 
 body #skills .timeline ul li:nth-child(odd) div::before {
-  left: -15px;
+  left: -16px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #9acc14 transparent transparent;
+  border-color: transparent #90af3e transparent transparent;
 }
 
 body #skills .timeline ul li:nth-child(even) div {
@@ -1154,9 +1112,9 @@ body #skills .timeline ul li:nth-child(even) div {
 }
 
 body #skills .timeline ul li:nth-child(even) div::before {
-  right: -15px;
+  right: -16px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #9acc14;
+  border-color: transparent transparent transparent #90af3e;
 }
 
 body #skills time {
@@ -1172,7 +1130,7 @@ body #skills .timeline ul li::after {
 }
 
 body #skills .timeline ul li.in-view::after {
-  background: #9acc14;
+  background: #90af3e;
 }
 
 body #skills .timeline ul li div {
@@ -1222,7 +1180,7 @@ body #skills .timeline ul li.in-view div {
   body #skills .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #9acc14 transparent transparent;
+    border-color: transparent #90af3e transparent transparent;
   }
 }
 
@@ -1264,11 +1222,11 @@ body #contact .uk-icon-button {
 }
 
 body #contact .uk-icon-button svg {
-  color: #9acc14;
+  color: #90af3e;
 }
 
 body #contact .uk-icon-button:hover {
-  background: #9acc14;
+  background: #90af3e;
 }
 
 body #contact .uk-icon-button:hover svg {
@@ -1296,7 +1254,7 @@ body .preloader p {
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: #9acc14;
+  color: #90af3e;
 }
 
 body .preloader .msg {
@@ -1306,17 +1264,15 @@ body .preloader .msg {
   font-size: 5vh;
   padding-top: 5vh;
   background: #1e2125;
-  -webkit-box-shadow: 0 0 30px #9acc14;
-          box-shadow: 0 0 30px #9acc14;
-  text-shadow: 0 0 20px #9acc14;
-  color: #9acc14;
+  text-shadow: 0 0 20px #90af3e;
+  color: #90af3e;
   width: 20vw;
   height: 15vh;
   position: absolute;
   left: 50%;
-  margin-left: -10vw;
-  top: 50%;
-  margin-top: -5vh;
+  bottom: 10%;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
   text-align: center;
   min-width: 200px;
   -webkit-animation-name: blink;
