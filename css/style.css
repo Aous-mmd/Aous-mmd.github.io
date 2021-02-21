@@ -295,7 +295,7 @@ body .containers .right-container .story h1 {
 }
 
 body .containers .right-container .story p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding-right: 10rem;
 }
 
@@ -307,6 +307,7 @@ body .containers .right-container .story p:nth-child(3) {
 
 body .containers .right-container .story a {
   color: #90af3e;
+  font-size: larger;
 }
 
 @media (max-width: 768px) {
