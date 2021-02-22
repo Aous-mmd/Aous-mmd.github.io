@@ -24,9 +24,11 @@ $animDuration: 7s;
     background: $colorOutlineFade
         linear-gradient(transparent 0%, transparent 50%, $colorOutline 50%, $colorOutline 100%);
 }
+
 * {
-    font-family: cursive;
+    font-family: Lato;
 }
+
 .uk-h1,
 .uk-h2,
 .uk-h3,
