@@ -1,0 +1,42 @@
+@import "./imports/imports";
+
+
+
+
+body {
+    header {
+        height: 300vh;
+        .navbar-light {
+            .navbar-brand {
+                img {
+                    width: 150px;
+                    height: 80px;
+                    object-fit: cover;
+                }
+            }
+            .nav-item {
+                margin: 0 2em;
+                .nav-link {
+                    font-family: $headFont;
+                    &:hover {
+                        color: $red;
+                    }
+                }
+                &.active>.nav-link {
+                    color: $red;
+                }
+            }
+            .formIcon input {
+                width: 0;
+                opacity: 0;
+            }
+            .FormInput {
+                display: none;
+                @media(max-width: 768px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+

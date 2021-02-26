@@ -1,0 +1,17 @@
+:root {
+    --animate-delay: 0s;
+    --animate-reapeat: 0;
+    --animation-delay: 0;
+}
+
+.Awidth {
+    animation: Awidth 2s linear both;
+    @keyframes Awidth {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 200px;
+        }
+    }
+}
