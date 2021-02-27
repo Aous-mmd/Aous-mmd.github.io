@@ -10,6 +10,7 @@ $green: #90af3e;
 $red: #9a1515;
 $milk: #f1f1f1;
 $dgreen: #90af3e;
+$lgreen: #c5ec59;
 $widthMouse: 26px;
 $heightMouse: 44px;
 $borderMouse: 3px;
@@ -19,6 +20,22 @@ $sizeTrackball: 5px;
 $posTrackball: 10px;
 $shrinkTrackball: 0.4;
 $animDuration: 7s;
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $green;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 
 @mixin bgGradient {
     background: $colorOutlineFade
