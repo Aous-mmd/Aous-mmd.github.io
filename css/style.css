@@ -12,7 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #c5ec59;
 }
 
 * {
@@ -1260,17 +1260,19 @@ body .preloader .bars-and-stuff {
 }
 
 body .preloader p {
-  font-family: Helvetica;
+  font-family: Lato;
   font-weight: bold;
   font-size: 2.1vh;
-  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 5px;
   padding: 0;
   line-height: 1;
   color: #90af3e;
 }
 
 body .preloader .msg {
-  font-family: Helvetica;
+  font-family: Lato;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 5vh;
