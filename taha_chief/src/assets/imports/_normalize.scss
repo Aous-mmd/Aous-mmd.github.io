@@ -4,6 +4,24 @@
     --animation-delay: 0;
 }
 
+.form-control:focus {
+    border-color: $red;
+    box-shadow: 0 0 0 0.2rem $lightred;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $red;
+}
+
+p {
+    color: $black;
+}
+
+* {
+    text-align: right;
+    font-family: $font;
+}
+
 .Awidth {
     animation: Awidth 2s linear both;
     @keyframes Awidth {

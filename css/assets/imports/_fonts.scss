@@ -1,0 +1,37 @@
+@font-face {
+    font-family: HacenH;
+    src: url("~@/assets/fonts/HacenBeirutHeading.eot");
+    src: url("~@/assets/fonts/HacenBeirutHeading.eot?#iefix") format("embedded-opentype"),
+        url("~@/assets/fonts/HacenBeirutHeading.woff2") format("woff2"),
+        url("~@/assets/fonts/HacenBeirutHeading.woff") format("woff"),
+        url("~@/assets/fonts/HacenBeirutHd.ttf") format("truetype"),
+        url("~@/assets/fonts/HacenBeirutHeading.svg#HacenBeirutHeading") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Hacen;
+    src: url("~@/assets/fonts/HacenBeirut.eot");
+    src: url("~@/assets/fonts/HacenBeirut.eot?#iefix") format("embedded-opentype"),
+        url("~@/assets/fonts/HacenBeirut.woff2") format("woff2"), url("~@/assets/fonts/HacenBeirut.woff") format("woff"),
+        url("~@/assets/fonts/HacenBeirut.ttf") format("truetype"),
+        url("~@/assets/fonts/HacenBeirut.svg#HacenBeirut") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: HacenL;
+    src: url("~@/assets/fonts/HacenBeirutLight.eot");
+    src: url("~@/assets/fonts/HacenBeirutLight.eot?#iefix") format("embedded-opentype"),
+        url("~@/assets/fonts/HacenBeirutLight.woff2") format("woff2"),
+        url("~@/assets/fonts/HacenBeirutLight.woff") format("woff"),
+        url("~@/assets/fonts/HacenBeirutLight.ttf") format("truetype"),
+        url("~@/assets/fonts/HacenBeirutLight.svg#HacenBeirutLight") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

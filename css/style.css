@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  font-family: Lato;
+  font-family: Helvetica;
 }
 
 .uk-h1,
@@ -1244,7 +1244,7 @@ body .preloader .bars-and-stuff {
 }
 
 body .preloader p {
-  font-family: monospace;
+  font-family: Helvetica;
   font-weight: bold;
   font-size: 2.1vh;
   margin: 0;
@@ -1254,7 +1254,7 @@ body .preloader p {
 }
 
 body .preloader .msg {
-  font-family: monospace;
+  font-family: Helvetica;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 5vh;
