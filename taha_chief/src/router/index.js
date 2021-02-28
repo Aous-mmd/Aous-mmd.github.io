@@ -70,7 +70,7 @@ router.beforeEach((to, from, next) => {
       store.getters.isLoggedIn &&
       to.matched.some(record => record.meta.requiresAuth) == false
     ) {
-      next("/homepage");
+      next("/");
       return;
     }
     next();
