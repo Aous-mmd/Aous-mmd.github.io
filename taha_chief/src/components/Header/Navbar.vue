@@ -14,11 +14,34 @@
         <router-link class="navbar-brand" to="/">
             <img src="assets/images/icons/logo.jpg" alt="Taha Chief Logo" />
         </router-link>
+        <!-- <div class="q-pa-md">
+            <div class="q-gutter-md row items-start">
+                <q-card
+                    flat
+                    bordered
+                    v-for="type in skeletonTypes"
+                    :key="type"
+                    style="width: 250px"
+                >
+                    <q-card-section>
+                        <div class="text-caption">"{{ type }}"</div>
+                    </q-card-section>
+
+                    <q-separator />
+
+                    <q-card-section>
+                        <q-skeleton :type="type" />
+                    </q-card-section>
+                </q-card>
+            </div>
+        </div> -->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav m-auto mt-2 mt-lg-0">
                 <li class="nav-item" v-for="item in items" :key="item.link">
                     <router-link class="nav-link" :to="item.link" exact>
-                        {{ item.title }}
+                        <q-skeleton width="50px" square>
+                            <span v-if="loaded">{{ item.title }}</span>
+                        </q-skeleton>
                     </router-link>
                 </li>
             </ul>
@@ -68,20 +91,31 @@
 <script>
     export default {
         name: "Navbar",
-        created: function () {
-            this.callData("Test");
+        methods: {},
+        props: ['loaded'],
+        beforeCreate: function () {
+            this.$store.dispatch("Test").then((res) => {
+                this.items = res.data.navs;
+            });
         },
-        data: function () {
+        // created: function () {
+
+        // },
+        // beforeMount() {
+
+        // }
+        mounted() {
+            // this.props.loaded = true;
+        },
+        // beforeUpdate() {
+        //     }
+        // updated() {
+
+        // }
+        data() {
             return {
                 items: [],
             };
-        },
-        methods: {
-            callData: function (type) {
-                this.$store.dispatch(type).then((res) => {
-                    this.items = res.data.navs;
-                });
-            },
         },
     };
 </script>

@@ -9,6 +9,7 @@ import "popper.js";
 import "bootstrap";
 
 import "./assets/app.scss";
+import './quasar'
 
 
 Vue.config.productionTip = false
