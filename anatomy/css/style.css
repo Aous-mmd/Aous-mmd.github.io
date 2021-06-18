@@ -1,0 +1,95 @@
+body {
+  background-color: #d3c3be;
+}
+
+body header {
+  height: 100vh;
+  background-color: #bda59d;
+}
+
+body header nav {
+  height: 10vh;
+}
+
+body header .slider {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0 0);
+  height: 90vh;
+}
+
+body header .slider .carousel-inner,
+body header .slider .slide {
+  height: 100%;
+}
+
+body header .slider .carousel-inner .carousel-item,
+body header .slider .carousel-inner img,
+body header .slider .slide .carousel-item,
+body header .slider .slide img {
+  height: inherit;
+}
+
+body main #home #download {
+  background-color: #d3c3be;
+  padding: 10vh;
+}
+
+body main #home #download p {
+  width: 80%;
+}
+
+body main #home #about {
+  background-color: #141312;
+  height: 70vh;
+  color: white;
+}
+
+body main #home #about .typ {
+  margin-top: 15vh;
+}
+
+body main #home #our_team {
+  position: relative;
+  height: 90vh;
+  margin-top: -15vh;
+  padding-top: 20vh;
+}
+
+body main #home #our_team .col-md-6 {
+  position: relative;
+  z-index: 5;
+}
+
+body main #home #our_team .img {
+  height: 500px;
+  margin-top: -15vh;
+}
+
+body main #home #our_team .img img {
+  height: 100%;
+  width: 100%;
+}
+
+body main #home #our_team::after {
+  content: "";
+  z-index: 0;
+  width: 100%;
+  background-color: #a7877e;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 80%);
+          clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 80%);
+}
+
+body footer .copyright {
+  margin-top: 10vh;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
