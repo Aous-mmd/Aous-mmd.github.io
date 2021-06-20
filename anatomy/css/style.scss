@@ -28,6 +28,9 @@ body {
   background-color: $bg_sec;
   header {
     height: 100vh;
+    @media (max-width: 768px) {
+      height: 65vh;
+    }
     background-color: $bg;
     nav {
       height: 15vh;
@@ -46,10 +49,14 @@ body {
         a.active {
           text-decoration: underline;
         }
+        form {
+          justify-content: center;
+        }
         input {
           border-radius: 25px;
           background-color: $bg_input;
           border: 0;
+          margin: 15px;
           &::placeholder {
             color: white;
           }
@@ -67,6 +74,9 @@ body {
         0 0
       );
       height: 85vh;
+      @media (max-width: 768px) {
+        height: 50vh;
+      }
       .carousel-inner,
       .slide {
         height: 100%;
@@ -78,6 +88,9 @@ body {
     }
     .slider_n {
       height: 85vh;
+      @media (max-width: 768px) {
+        height: 50vh;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -89,6 +102,7 @@ body {
       #download {
         background-color: $bg_sec;
         padding: 10vh;
+
         p {
           width: 80%;
           font-family: P;
@@ -98,6 +112,15 @@ body {
         }
         img {
           height: 30vh;
+        }
+        @media (max-width: 768px) {
+          p {
+            width: 100%;
+          }
+          .col-md-6 {
+            text-align: center;
+            margin-bottom: 15px;
+          }
         }
       }
       #about {
@@ -117,6 +140,11 @@ body {
         height: 90vh;
         margin-top: -21vh;
         padding-top: 20vh;
+        @media (max-width: 768px) {
+          .desc {
+            margin-top: -35px;
+          }
+        }
         .col-md-6 {
           position: relative;
           z-index: 5;
@@ -127,6 +155,10 @@ body {
         .img {
           height: 500px;
           margin-top: -15vh;
+          @media (max-width: 768px) {
+            height: 235px;
+            margin-top: -6vh;
+          }
           img {
             height: 100%;
             width: 100%;
@@ -150,6 +182,9 @@ body {
       #who {
         padding: 5em;
         background-color: $black;
+        @media (max-width: 768px) {
+          padding: 3em;
+        }
         h1,
         p {
           color: white;
@@ -206,6 +241,18 @@ body {
     .copyright {
       margin-top: 10vh;
     }
+    @media (max-width: 768px) {
+      .col-md-4 {
+        text-align: center;
+        .title {
+          width: auto;
+          margin: 15px auto;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -228,4 +275,9 @@ body {
 
 p {
   font-family: P;
+}
+
+.navbar-collapse {
+  background-color: $bg;
+  z-index: 4;
 }

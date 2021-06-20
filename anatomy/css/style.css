@@ -27,6 +27,12 @@ body header {
   background-color: #bda59d;
 }
 
+@media (max-width: 768px) {
+  body header {
+    height: 65vh;
+  }
+}
+
 body header nav {
   height: 15vh;
 }
@@ -52,10 +58,17 @@ body header nav .container-fluid a.active {
   text-decoration: underline;
 }
 
+body header nav .container-fluid form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body header nav .container-fluid input {
   border-radius: 25px;
   background-color: #a7877e;
   border: 0;
+  margin: 15px;
 }
 
 body header nav .container-fluid input::-webkit-input-placeholder {
@@ -80,6 +93,12 @@ body header .slider {
   height: 85vh;
 }
 
+@media (max-width: 768px) {
+  body header .slider {
+    height: 50vh;
+  }
+}
+
 body header .slider .carousel-inner,
 body header .slider .slide {
   height: 100%;
@@ -94,6 +113,12 @@ body header .slider .slide img {
 
 body header .slider_n {
   height: 85vh;
+}
+
+@media (max-width: 768px) {
+  body header .slider_n {
+    height: 50vh;
+  }
 }
 
 body header .slider_n img {
@@ -119,6 +144,16 @@ body main #home #download img {
   height: 30vh;
 }
 
+@media (max-width: 768px) {
+  body main #home #download p {
+    width: 100%;
+  }
+  body main #home #download .col-md-6 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
 body main #home #about {
   background-color: #141312;
   height: 70vh;
@@ -140,6 +175,12 @@ body main #home #our_team {
   padding-top: 20vh;
 }
 
+@media (max-width: 768px) {
+  body main #home #our_team .desc {
+    margin-top: -35px;
+  }
+}
+
 body main #home #our_team .col-md-6 {
   position: relative;
   z-index: 5;
@@ -152,6 +193,13 @@ body main #home #our_team p {
 body main #home #our_team .img {
   height: 500px;
   margin-top: -15vh;
+}
+
+@media (max-width: 768px) {
+  body main #home #our_team .img {
+    height: 235px;
+    margin-top: -6vh;
+  }
 }
 
 body main #home #our_team .img img {
@@ -179,6 +227,12 @@ body main #about {
 body main #about #who {
   padding: 5em;
   background-color: #141312;
+}
+
+@media (max-width: 768px) {
+  body main #about #who {
+    padding: 3em;
+  }
 }
 
 body main #about #who h1,
@@ -246,6 +300,19 @@ body footer .copyright {
   margin-top: 10vh;
 }
 
+@media (max-width: 768px) {
+  body footer .col-md-4 {
+    text-align: center;
+  }
+  body footer .col-md-4 .title {
+    width: auto;
+    margin: 15px auto;
+  }
+  body footer .col-md-4 .title::after {
+    display: none;
+  }
+}
+
 .carousel-indicators [data-bs-target] {
   width: 10px;
   height: 10px;
@@ -266,5 +333,10 @@ body footer .copyright {
 
 p {
   font-family: P;
+}
+
+.navbar-collapse {
+  background-color: #bda59d;
+  z-index: 4;
 }
 /*# sourceMappingURL=style.css.map */
