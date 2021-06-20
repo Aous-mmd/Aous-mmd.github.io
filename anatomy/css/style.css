@@ -92,6 +92,15 @@ body header .slider .slide img {
   height: inherit;
 }
 
+body header .slider_n {
+  height: 85vh;
+}
+
+body header .slider_n img {
+  width: 100%;
+  height: 100%;
+}
+
 body main #home #download {
   background-color: #d3c3be;
   padding: 10vh;
