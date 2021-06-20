@@ -1,3 +1,23 @@
+@font-face {
+  font-family: PEB;
+  src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: P;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PB;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: PI;
+  src: url(../fonts/Poppins-Italic.ttf);
+}
+
 body {
   background-color: #d3c3be;
 }
@@ -8,13 +28,56 @@ body header {
 }
 
 body header nav {
-  height: 10vh;
+  height: 15vh;
+}
+
+body header nav .container-fluid {
+  height: 100%;
+}
+
+body header nav .container-fluid li {
+  margin: 0 40px;
+}
+
+body header nav .container-fluid img,
+body header nav .container-fluid a {
+  height: 100%;
+}
+
+body header nav .container-fluid a {
+  font-family: PEB;
+}
+
+body header nav .container-fluid a.active {
+  text-decoration: underline;
+}
+
+body header nav .container-fluid input {
+  border-radius: 25px;
+  background-color: #a7877e;
+  border: 0;
+}
+
+body header nav .container-fluid input::-webkit-input-placeholder {
+  color: white;
+}
+
+body header nav .container-fluid input:-ms-input-placeholder {
+  color: white;
+}
+
+body header nav .container-fluid input::-ms-input-placeholder {
+  color: white;
+}
+
+body header nav .container-fluid input::placeholder {
+  color: white;
 }
 
 body header .slider {
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0 0);
           clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0 0);
-  height: 90vh;
+  height: 85vh;
 }
 
 body header .slider .carousel-inner,
@@ -36,6 +99,15 @@ body main #home #download {
 
 body main #home #download p {
   width: 80%;
+  font-family: P;
+}
+
+body main #home #download h1 {
+  font-family: PB;
+}
+
+body main #home #download img {
+  height: 30vh;
 }
 
 body main #home #about {
@@ -48,6 +120,10 @@ body main #home #about .typ {
   margin-top: 15vh;
 }
 
+body main #home #about .typ p {
+  font-family: P;
+}
+
 body main #home #our_team {
   position: relative;
   height: 90vh;
@@ -58,6 +134,10 @@ body main #home #our_team {
 body main #home #our_team .col-md-6 {
   position: relative;
   z-index: 5;
+}
+
+body main #home #our_team p {
+  font-family: P;
 }
 
 body main #home #our_team .img {
@@ -83,6 +163,41 @@ body main #home #our_team::after {
           clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 80%);
 }
 
+body footer p {
+  font-family: P;
+}
+
+body footer p span {
+  font-weight: bold;
+  font-family: P;
+}
+
+body footer div,
+body footer span {
+  font-family: PI;
+}
+
+body footer .title {
+  color: #754134;
+  margin-top: 5vh;
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  width: 60px;
+  font-size: 20px;
+}
+
+body footer .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 25%;
+  background-color: #754134;
+}
+
 body footer .copyright {
   margin-top: 10vh;
 }
@@ -91,5 +206,17 @@ body footer .copyright {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+
+.btn-primary {
+  background-color: #a7877e !important;
+  border: 0 !important;
+  border-radius: 0;
+}
+
+.btn-secondary {
+  background-color: black !important;
+  border: 0 !important;
+  border-radius: 0;
 }
 /*# sourceMappingURL=style.css.map */
