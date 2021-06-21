@@ -24,6 +24,10 @@ $black: #141312;
   src: url(../fonts/Poppins-Italic.ttf);
 }
 
+.btn {
+  padding: 10px 3em;
+}
+
 body {
   background-color: $bg_sec;
   header {
@@ -274,6 +278,11 @@ body {
     }
   }
   footer {
+    .socail  {
+      a { 
+        color: transparent;
+      }
+    }
     p {
       font-family: PI;
       font-weight: bold;
