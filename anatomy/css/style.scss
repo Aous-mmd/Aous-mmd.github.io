@@ -278,8 +278,8 @@ body {
     }
   }
   footer {
-    .socail  {
-      a { 
+    .socail {
+      a {
         color: transparent;
       }
     }
@@ -302,7 +302,7 @@ body {
       position: relative;
       letter-spacing: 3px;
       margin-bottom: 10px;
-      width: 60px;
+      width: 60%;
       font-size: 20px;
       &::after {
         content: "";
@@ -313,6 +313,17 @@ body {
         width: 25%;
         background-color: $h;
       }
+    }
+    div {
+      margin-bottom: 10px;
+    }
+    .link {
+      color: inherit;
+      text-decoration: none;
+      border-left: solid;
+      padding-left: 15px;
+      border-left-width: 2px;
+      border-color: $h;
     }
     .copyright {
       margin-top: 10vh;
