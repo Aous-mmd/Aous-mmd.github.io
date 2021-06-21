@@ -261,12 +261,75 @@ body main #about #team .col-md-4 .team_img {
   height: 500px;
 }
 
+body main #services {
+  padding: 5em;
+}
+
+body main #services h1 {
+  font-family: PEB;
+  font-size: 3rem;
+}
+
+body main #services .content {
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  body main #services .content {
+    width: 100%;
+  }
+}
+
+body main #services .content h1 {
+  color: #754134;
+}
+
+body main #services .content p {
+  color: #754134;
+  font-family: PB;
+}
+
+body main #services .stroke {
+  -webkit-text-stroke: 2px #754134;
+  color: transparent;
+  font-size: 10rem;
+  font-family: PB;
+}
+
+body main #services .img-heart {
+  width: 100%;
+  height: 115vh;
+}
+
+@media (max-width: 768px) {
+  body main #services .img-heart {
+    height: 50vh;
+  }
+}
+
+body main #services .img-heart img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: bottom;
+     object-position: bottom;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+@media (max-width: 768px) {
+  body main #services .img-heart img {
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+
 body footer p {
-  font-family: P;
+  font-family: PI;
+  font-weight: bold;
 }
 
 body footer p span {
-  font-weight: bold;
+  font-weight: bolder;
   font-family: P;
 }
 

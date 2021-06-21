@@ -206,12 +206,56 @@ body {
         }
       }
     }
+    #services {
+      padding: 5em;
+      h1 {
+        font-family: PEB;
+        font-size: 3rem;
+      }
+      .content {
+        width: 70%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        h1 {
+          color: $h;
+        }
+        p {
+          color: $h;
+          font-family: PB;
+        }
+      }
+      .stroke {
+        -webkit-text-stroke: 2px $h;
+        color: transparent;
+        font-size: 10rem;
+        font-family: PB;
+      }
+      .img-heart {
+        width: 100%;
+        height: 115vh;
+        @media (max-width: 768px) {
+          height: 50vh;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          // object-fit: cover;
+          object-position: bottom;
+          filter: opacity(0.5);
+          @media (max-width: 768px) {
+            object-position: center;
+          }
+        }
+      }
+    }
   }
   footer {
     p {
-      font-family: P;
+      font-family: PI;
+      font-weight: bold;
       span {
-        font-weight: bold;
+        font-weight: bolder;
         font-family: P;
       }
     }
