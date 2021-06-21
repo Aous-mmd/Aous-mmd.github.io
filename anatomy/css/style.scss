@@ -249,6 +249,29 @@ body {
         }
       }
     }
+    #contact {
+      height: 120vh;
+      padding: 5em;
+      @media (max-width: 768px) {
+        padding: 2em 5em;
+      }
+      .row {
+        justify-content: center;
+        position: relative;
+        z-index: 5;
+      }
+      position: relative;
+      &::after {
+        content: "";
+        width: 80%;
+        height: 100%;
+        margin: 0 10%;
+        position: absolute;
+        top: -5%;
+        left: 0;
+        background-color: $bg;
+      }
+    }
   }
   footer {
     p {
@@ -324,4 +347,11 @@ p {
 .navbar-collapse {
   background-color: $bg;
   z-index: 4;
+}
+
+.btn-light {
+  margin: 0 auto;
+  color: $bg;
+  border-radius: 0;
+  padding: 10px 5em;
 }
